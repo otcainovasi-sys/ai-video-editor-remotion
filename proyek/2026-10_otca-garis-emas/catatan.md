@@ -23,3 +23,11 @@
 .venv\Scripts\python pipeline/scripts/video.py render 2026-10_otca-garis-emas
 .venv\Scripts\python pipeline/scripts/video.py qa 2026-10_otca-garis-emas
 ```
+
+## Render cloud 2026-10-30 (atas permintaan Zar, sebelum render laptop)
+- Remotion tidak bisa dipasang di cloud (registry npm diblokir) → kode PanggungReel asli dibundel esbuild + pengganti
+  minimal API remotion, dirender per frame di Chromium (Playwright). Mask: GrabCut per frame (pengganti MediaPipe) +
+  `panggung.haluskan_mask`; transkrip = timing OCR caption v3 (bukan whisperx).
+- QA: 13/14 LULUS. K01.cps GAGAL ("jangan hanya" 32 cps) — waktu akhir kata dari OCR terlalu pendek; ulangi QA setelah
+  transkrip whisperx di laptop. Checklist manual belum dicentang.
+- Render laptop (MediaPipe + whisperx + Remotion asli) tetap jalur resmi; hasil cloud ini untuk ditinjau.

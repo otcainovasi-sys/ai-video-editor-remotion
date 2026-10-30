@@ -105,7 +105,7 @@
     "waktu": "2026-10-30T08:16:00",
     "catatan": "Zar setujui storyboard 'Satu Garis Emas' v1 (9 adegan, musik bawaan pulsa) di chat."
   },
-  "qa": null,
+  "qa": "GAGAL",
   "roto": {
     "backend": "mediapipe",
     "halus": 0.3
