@@ -1,0 +1,97 @@
+{
+  "status": "GAGAL",
+  "hasil": [
+    {
+      "id": "K07.2",
+      "aturan": "H.264, resolusi format, pix_fmt, tag bt709, AAC",
+      "status": "LULUS",
+      "detail": "h264 1080x1920 yuv420p ('bt709', 'bt709', 'bt709') audio aac"
+    },
+    {
+      "id": "FPS",
+      "aturan": "fps = format.fps",
+      "status": "LULUS",
+      "detail": "30.00"
+    },
+    {
+      "id": "K06.1",
+      "aturan": "loudness terintegrasi = audio.lufs ± toleransi",
+      "status": "LULUS",
+      "detail": "-14.2 LUFS"
+    },
+    {
+      "id": "K06.2",
+      "aturan": "true peak ≤ audio.true-peak",
+      "status": "LULUS",
+      "detail": "-1.9 dBTP"
+    },
+    {
+      "id": "DUR",
+      "aturan": "durasi = rekaman (±0,1 s)",
+      "status": "LULUS",
+      "detail": "58.67 s vs rekaman 58.67 s"
+    },
+    {
+      "id": "SINK",
+      "aturan": "audio & video sama panjang (±0,1 s)",
+      "status": "LULUS",
+      "detail": "audio 58.67 s"
+    },
+    {
+      "id": "K01.cps",
+      "aturan": "caption ≤ qa.karakter-per-detik-maks",
+      "status": "GAGAL",
+      "detail": "terpadat 32.4 cps (“jangan hanya”), batas 23"
+    },
+    {
+      "id": "§10",
+      "aturan": "caption tidak menutupi wajah (dagu di atas caption)",
+      "status": "LULUS",
+      "detail": "aman di semua halaman caption"
+    },
+    {
+      "id": "HOOK",
+      "aturan": "frame 0 sudah berisi visual (#7)",
+      "status": "LULUS",
+      "detail": "stddev luminans 75.9"
+    },
+    {
+      "id": "HOOK.1s",
+      "aturan": "gerak 0→0,5 s cukup kuat (#7)",
+      "status": "LULUS",
+      "detail": "beda rata-rata 30.5"
+    },
+    {
+      "id": "STRUKTUR",
+      "aturan": "panggung.json valid (modul, transisi, kamera, anchor, urutan)",
+      "status": "LULUS",
+      "detail": "proyek/2026-10_otca-garis-emas: panggung 9 adegan, match cut garis 8/8"
+    },
+    {
+      "id": "MATCH",
+      "aturan": "≥1 match cut bentuk antar-adegan (#5)",
+      "status": "LULUS",
+      "detail": "8/8 potongan garis emas"
+    },
+    {
+      "id": "KETUKAN",
+      "aturan": "potongan di ketukan + denyut grafis",
+      "status": "LULUS",
+      "detail": "96.0 BPM, 8/8 potongan di-snap"
+    },
+    {
+      "id": "K08.6",
+      "aturan": "musik di-duck di bawah ucapan",
+      "status": "LULUS",
+      "detail": "transkrip -9 dB"
+    }
+  ],
+  "manual": [
+    "§10 mask: putar 1:1 di tepi hijab kiri/kanan (latar gelap) — tanpa serpih batu, halo, atau kedip tepi.",
+    "#9 transisi garis emas frame demi frame: tanpa pop/kedip; garis meluncur mulus antar-adegan.",
+    "Orbit (adegan 5): ikon depan lewat di dada/bahu, tidak pernah di wajah.",
+    "K00 zona aman: logo, pil 'Link di bio', label A1–C2 & Dengar/Bicara/Tulis/Baca di dalam margin 108/315 px.",
+    "K07.3 tonton di HP: keterbacaan caption pil emas, sinkron bibir.",
+    "K08.5–6 headphone: SFX & ducking musik pulsa (naik di jeda, tidak memompa di tengah kalimat)."
+  ]
+}
