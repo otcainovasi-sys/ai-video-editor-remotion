@@ -203,6 +203,7 @@ Semua efek E01–E30 native. Generator slot memilih efek per fungsi sesuai gaya 
 | P01 | scripts | pipeline/scripts/ (`sistem.VERSI_SCRIPTS`) | 0.6 | draft |
 | R01 | remotion | remotion/ (Remotion 4.0.538, React; membaca tokens/ yang sama) | 0.1 | draft |
 | L01 | split-layout | pipeline/scripts/split.py + remotion/src/split/ (SplitReel; pustaka adegan: menara-sendiri, tujuan-pengorbanan, perisai-sunyi, siang-malam, timbangan-ragu, jalan-sendiri, puncak-fajar, kartu-akhir) — per proyek `split.json`; hook detik pertama, match cut iris, denyut ketukan, ducking transkrip (`ducking.py`), QA lewat `video.py cek/qa` | 0.2 | draft |
+| L02 | panggung | pipeline/scripts/panggung.py + remotion/src/panggung/ (PanggungReel; pustaka adegan pg-portal, pg-sertifikat-kampus, pg-tangga, pg-ukur, pg-orbit, pg-coret, pg-seimbang, pg-kunci, pg-terbang) — per proyek `panggung.json`; frame penuh: latar bersih → grafis belakang → talent roto ber-alpha (mask halus) → grafis depan, kamera virtual + parallax, match cut garis emas, caption pil emas, QA caption vs wajah | 0.1 | draft |
 
 ## Proyek
 | id | template | gaya | status |
@@ -215,6 +216,7 @@ Semua efek E01–E30 native. Generator slot memilih efek per fungsi sesuai gaya 
 | 2026-10_otca-sertifikat-jerman | explainer@0.2 | glass-tech@0.5 | brief |
 | 2026-10_we-fail-today | explainer@0.2 | glass-tech@0.6 | brief |
 | 2026-10_life-isnt-a-race | hook-problem-solution@0.2 | kertas-tipografi@0.5 | selesai v2 |
+| 2026-10_otca-garis-emas | explainer@0.2 | glass-tech@0.6 (+ brand OTCA, layout panggung L02) | disetujui |
 
 ## Aturan
 1. Pola nama: `JENIS_NN_nama-pendek_vX.Y.ext`. Satu nama pendek = satu file aktif.

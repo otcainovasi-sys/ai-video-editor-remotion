@@ -329,3 +329,19 @@ Versi lama dipindah ke `arsip/<lapisan>/` dengan nama file tetap (mis. arsip/kon
   elemen (clip-path hanya sisi atas), serasi dengan kata yang masuk dari balik masker. Sebelumnya elemen di posisi atas
   keluar 10–11 px dari zona aman saat animasi keluar (peringatan K00.1, uji "Life Isn't a Race"). Posisi teks tidak
   digeser: percobaan memberi ruang 26 px di atas frasa justru memindahkan kata aksen ke latar lain (K01.4 2,5 < 3).
+
+## 2026-10-30 — layout panggung (L02) + mask halus, video pemicu: 2026-10_otca-garis-emas
+- Baru L02 panggung (draft v0.1): `pipeline/scripts/panggung.py` + `remotion/src/panggung/` (PanggungReel, kamera.ts,
+  IkonEmas.tsx, pustaka adegan pg-portal, pg-sertifikat-kampus, pg-tangga, pg-ukur, pg-orbit, pg-coret, pg-seimbang,
+  pg-kunci, pg-terbang). Satu frame penuh: latar bersih (talent di-inpaint, plate menumpuk) → grafis belakang (oklusi
+  kepala/bahu) → talent roto ber-alpha (VP9 webm, OffthreadVideo transparent) → grafis depan; kamera virtual per adegan
+  (`potong`/`snap`/`halus`, punch-in, dorong pelan) dengan parallax per lapis; match cut "garis emas" (adegan menyempit
+  jadi garis 7 px, meluncur ke y adegan baru); caption pil emas per adegan (`caption_y`); logo + end card glow.
+  Pemicu: Zar minta edit "Contoh Video" OTCA dengan teknik berbeda dari v3 split (rotoscope, zoom, depth).
+- Mask halus (`panggung.haluskan_mask`): histogram Bayes Lab+tekstur di pita tepi, GrabCut berbenih 540×960, guided filter,
+  EMA hanya di piksel diam, dekontaminasi warna tepi — tanpa sklearn/scipy. Uji 12 frame rekaman OTCA dari mask yang
+  sengaja dirusak (resolusi rendah + melebar): serpih batu di sisi hijab bersih, tanpa halo; ±0,7 s/frame.
+- QA panggung: + §10 caption vs wajah otomatis (dagu dari geometri kepala mask × kamera) di samping K07.2/K06/K01.cps/HOOK/
+  STRUKTUR/MATCH/KETUKAN/K08.6.
+- split.py: `mix_audio(..., irama=None)` bisa dipakai ulang (panggung); file mix ditulis di samping `out` (perilaku split sama).
+- video.py: `cek` memvalidasi panggung.json; `render`/`qa` proyek ber-panggung.json lewat panggung.py.

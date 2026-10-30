@@ -1,0 +1,113 @@
+{
+  "proyek": "2026-10_otca-garis-emas",
+  "judul": "Sertifikat Jerman ≠ Siap Studi — Satu Garis Emas (layout panggung)",
+  "status": "disetujui",
+  "skill": "video-editor@0.3",
+  "gaya": "glass-tech@0.6",
+  "template": "explainer@0.2",
+  "konteks": [
+    "zona-aman@0.2",
+    "caption@0.2",
+    "depth-typography@0.2",
+    "ingest@0.1",
+    "gerak@0.2",
+    "audio@0.1",
+    "ekspor@0.1",
+    "sound-design@0.1",
+    "koreografi@0.2"
+  ],
+  "platform": [
+    "reels"
+  ],
+  "aset": {
+    "rekaman": "aset/rekaman/take1.mov",
+    "potong": [],
+    "crop": {
+      "x": 0.5
+    },
+    "musik": null
+  },
+  "warna": {
+    "filter": "eq=contrast=1.04"
+  },
+  "transkrip": {
+    "bahasa": "id",
+    "model": "large-v3"
+  },
+  "token_override": {
+    "_catatan": "Brand OTCA (Brand Guidelines OTCA New.pdf) — HANYA proyek ini; gaya dasar glass-tech tidak diubah.",
+    "warna": {
+      "latar": "#000000",
+      "teks-utama": "#FFFFFF",
+      "teks-sekunder": "#FFFFFF",
+      "aksen": "#CB9D31",
+      "aksen-2": "#FDF1A4",
+      "peringatan": "#B3822C",
+      "panel": "#000000",
+      "panel-opasitas": 0.62,
+      "garis-panel": "#CB9D31",
+      "garis-opasitas": 0.6,
+      "stroke": "#000000",
+      "bayangan": "#000000"
+    },
+    "font": {
+      "judul": {
+        "file": "Montserrat-ExtraBold.ttf",
+        "family": "Montserrat",
+        "weight": 800,
+        "wght": 0
+      },
+      "subjudul": {
+        "file": "Montserrat-Bold.ttf",
+        "family": "Montserrat",
+        "weight": 700,
+        "wght": 0
+      },
+      "isi": {
+        "file": "Montserrat-SemiBold.ttf",
+        "family": "Montserrat",
+        "weight": 600,
+        "wght": 0
+      },
+      "caption": {
+        "file": "Montserrat-Bold.ttf",
+        "family": "Montserrat",
+        "weight": 700,
+        "wght": 0
+      },
+      "depth": {
+        "file": "Montserrat-ExtraBold.ttf",
+        "family": "Montserrat",
+        "weight": 800,
+        "wght": 0
+      }
+    },
+    "motif": {
+      "aksen": "kotak",
+      "tekstur": null
+    },
+    "zona-aman": {
+      "kiri": 108
+    },
+    "caption": {
+      "kata-maks": 2
+    },
+    "qa": {
+      "karakter-per-detik-maks": 23
+    },
+    "_catatan_qa": "karakter-per-detik-maks 22→23: caption verbatim, kata 'benar-benar' terpadat 22,0 cps (v1 memakai 22; lonely-now-stronger 23)."
+  },
+  "terpakai": null,
+  "riwayat": [],
+  "layout": "panggung",
+  "persetujuan": {
+    "storyboard": "https://claude.ai/artifact/1JPE6HfDcXcRJAVxp4JqJW",
+    "waktu": "2026-10-30T08:16:00",
+    "catatan": "Zar setujui storyboard 'Satu Garis Emas' v1 (9 adegan, musik bawaan pulsa) di chat."
+  },
+  "qa": null,
+  "roto": {
+    "backend": "mediapipe",
+    "halus": 0.3
+  }
+}

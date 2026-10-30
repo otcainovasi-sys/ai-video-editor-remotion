@@ -701,6 +701,11 @@ def cek_registry() -> int:
                 mp, ip = split.cek(pr)
                 masalah += mp
                 info += ip
+            if (d / "panggung.json").exists():  # layout panggung (L02): modul, transisi garis, kamera, anchor, hook
+                import panggung
+                mp, ip = panggung.cek(pr)
+                masalah += mp
+                info += ip
     for i in info:
         log("cek", i)
     for m in masalah:
@@ -781,6 +786,18 @@ def split_satu_pintu(p: Proyek, cmd: str) -> int:
     return 0 if split.qa(p) else 1
 
 
+def panggung_satu_pintu(p: Proyek, cmd: str) -> int:
+    """Proyek layout panggung (panggung.json): render/qa lewat panggung.py (satu pintu video.py tetap berlaku)."""
+    import panggung
+    if cmd == "semua":
+        raise GagalPipeline("proyek panggung: setelah storyboard disetujui Zar, jalankan panggung.py siapkan <proyek>, "
+                            "lalu video.py render <proyek> dan video.py qa <proyek>.")
+    if cmd == "render":
+        panggung.render(p)
+        return 0
+    return 0 if panggung.qa(p) else 1
+
+
 def main() -> int:
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         print(__doc__)
@@ -846,6 +863,8 @@ def main() -> int:
         return 0
     if (folder / "split.json").exists() and cmd in ("render", "qa", "semua"):
         return split_satu_pintu(Proyek(folder), cmd)
+    if (folder / "panggung.json").exists() and cmd in ("render", "qa", "semua"):
+        return panggung_satu_pintu(Proyek(folder), cmd)
     if cmd == "semua":
         return semua(Proyek(folder), "--paksa" in arg, "--tanpa-setuju" in arg)
     if cmd == "setuju":

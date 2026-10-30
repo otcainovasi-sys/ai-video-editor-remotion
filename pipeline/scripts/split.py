@@ -218,8 +218,9 @@ def daftar_sfx(cfg: dict, kata: list[dict]) -> list[dict]:
     return sfx
 
 
-def mix_audio(p: Proyek, cfg: dict, out: Path) -> dict:
-    """Suara + musik latar ber-ducking (amplop transkrip, ducking.py) + SFX terjadwal → master −14 LUFS / plafon −2 dBTP."""
+def mix_audio(p: Proyek, cfg: dict, out: Path, irama: dict | None = None) -> dict:
+    """Suara + musik latar ber-ducking (amplop transkrip, ducking.py) + SFX terjadwal → master −14 LUFS / plafon −2 dBTP.
+    `irama` = grid ketukan props (ofset_musik); bawaan dibaca dari props split. Dipakai juga oleh panggung.py."""
     kata = baca_json(p.words_path)["kata"]
     dur = durasi(p.ingest_video)
     ins: list = ["-i", p.ingest_audio]
@@ -230,7 +231,8 @@ def mix_audio(p: Proyek, cfg: dict, out: Path) -> dict:
     fil.append(f"[0:a]aformat=sample_rates=48000:channel_layouts=stereo,apad=whole_dur={dur:.3f},asplit=2[suara][kunci]")
     if musik:
         src = MUSIK_DIR / f"{musik['file'].split(':', 1)[1]}.wav" if musik["file"].startswith("bawaan:") else p.path_aset(musik["file"])
-        irama = (baca_json(SEMENTARA / "split" / p.dir.name / "props.json") or {}).get("ketukan") or {}
+        if irama is None:
+            irama = (baca_json(SEMENTARA / "split" / p.dir.name / "props.json") or {}).get("ketukan") or {}
         ins += ["-stream_loop", "-1", "-ss", f"{irama.get('ofset_musik', 0.0):.4f}", "-i", src]
         dk = ducking.konfigurasi(musik)
         env = ducking.filter_ducking(kata, dur, dk) if dk["mode"] == "transkrip" else ""
@@ -257,7 +259,7 @@ def mix_audio(p: Proyek, cfg: dict, out: Path) -> dict:
                    f"adelay={ms}|{ms}[s{i}]")
         label_mix.append(f"[s{i}]")
     fil.append(f"{''.join(label_mix)}amix=inputs={len(label_mix)}:normalize=0:duration=first[mix]")
-    mentah = SEMENTARA / "split" / p.dir.name / "mix.wav"
+    mentah = out.with_name("mix.wav")
     jalankan(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", *ins, "-filter_complex", ";".join(fil),
               "-map", "[mix]", "-t", f"{dur:.3f}", "-c:a", "pcm_s24le", mentah])
     # plafon master = token true-peak − MARGIN_TP_LOSSY (−2 dBTP) agar lolos K06.2 setelah encode AAC

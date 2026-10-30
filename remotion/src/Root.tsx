@@ -29,6 +29,7 @@ import { GrowthCurve, GrowthCurveElemen, HeadlineStorm, HeadlineStormElemen, Liq
 import { BabBaru, BabBaruElemen, DuaLinimasa, DuaLinimasaElemen, KinetikKata, KinetikKataElemen, Lintasan,
          LintasanElemen } from "./compositions/Reflektif";
 import { SplitReel, SplitReelProps } from "./split/SplitReel";
+import { PanggungReel, PanggungReelProps } from "./panggung/PanggungReel";
 import { PropsDasar, Tokens } from "./lib/kontrak";
 import platform from "../../tokens/TOKEN_00_platform_v0.4.json";
 import glass from "../../tokens/TOKEN_01_glass-tech_v0.3.json";
@@ -185,5 +186,18 @@ export const RemotionRoot: React.FC = () => (
         footage: { src: "proyek/contoh/talent.mp4", geser_y: 560, titik_zoom_y: 950 }, zoom: [[0, 1], [99, 1]],
         adegan: [{ modul: "menara-sendiri", mulai: 0, selesai: 3, t: {} }], kata: [],
         caption: { y: 930, kata_maks: 4, karakter_maks: 18, jeda_pecah: 0.35 } } as SplitReelProps} />
+    {/* Layout panggung (L02, pipeline/scripts/panggung.py): satu frame penuh, talent roto + kedalaman 4 lapis + kamera
+        virtual. Studio: panggung.py studio <proyek> mengisi --props (footage proyek ada di public/proyek/<id>/). */}
+    <Composition id="PanggungReel" component={PanggungReel}
+      calculateMetadata={({ props }: { props: PanggungReelProps }) => ({ durationInFrames: props.durasiFrame, fps: props.fps,
+        width: props.W, height: props.H })}
+      defaultProps={{ W, H, fps: platform.format.fps, durasiFrame: 90, tokens: { ...platform, ...glass } as unknown as Tokens,
+        zona: [z.kiri, z.atas, W - z.kanan, H - z.bawah], asal_y: 0.42,
+        footage: { talent: "proyek/contoh/talent.webm", latar: "proyek/contoh/latar.mp4" },
+        grade: { latar_terang: 0.32, latar_blur: 16, latar_saturasi: 0.45, rim: 0.45, bayangan: 0.55 },
+        adegan: [{ modul: "pg-portal", mulai: 0, selesai: 3, t: {}, kamera: { s: 1.06, dy: 0 } }],
+        gerak: { masuk: [0.16, 1, 0.3, 1], keluar: [0.7, 0, 0.84, 0], durasi_masuk: 0.6, durasi_keluar: 0.33, snap: 0.2,
+          halus: 0.7, dorong: 0.04 },
+        kata: [], caption: { y: 1425, kata_maks: 2, karakter_maks: 18, jeda_pecah: 0.35 } } as PanggungReelProps} />
   </>
 );
