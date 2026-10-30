@@ -202,7 +202,8 @@ const Latar: React.FC<{ pr: PanggungReelProps; wr: Warna; kini: { s: number; dy:
   return (
     <>
       <div style={{ position: "absolute", inset: 0, transformOrigin: `${pr.W / 2}px ${pr.H * pr.asal_y}px`,
-        scale: String(l.s * 1.04), translate: `0px ${l.ty}px` }}>
+        // latar selalu menutupi frame: saat pull-out (s < 1) + geser dy, skala parallax saja akan membuka tepi hitam
+        scale: String(Math.max(l.s * 1.04, 1.15)), translate: `0px ${l.ty}px` }}>
         <OffthreadVideo src={staticFile(pr.footage.latar)} muted style={{ width: pr.W, height: pr.H,
           filter: `blur(${g.latar_blur}px) brightness(${g.latar_terang}) saturate(${g.latar_saturasi})` }} />
       </div>
