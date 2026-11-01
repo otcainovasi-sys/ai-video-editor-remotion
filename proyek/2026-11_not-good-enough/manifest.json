@@ -1,0 +1,103 @@
+{
+  "proyek": "2026-11_not-good-enough",
+  "judul": "You're Not Good Enough (Yet) — split, ensō bara",
+  "status": "storyboard",
+  "skill": "video-editor@0.3",
+  "gaya": "glass-tech@0.6",
+  "template": "explainer@0.2",
+  "konteks": [
+    "zona-aman@0.2",
+    "caption@0.2",
+    "depth-typography@0.2",
+    "ingest@0.1",
+    "gerak@0.2",
+    "audio@0.1",
+    "ekspor@0.1",
+    "sound-design@0.1",
+    "koreografi@0.2"
+  ],
+  "platform": [
+    "reels"
+  ],
+  "aset": {
+    "rekaman": "aset/rekaman/take1.mp4",
+    "potong": [],
+    "crop": {
+      "x": 0.5
+    },
+    "musik": null
+  },
+  "warna": {
+    "filter": "eq=contrast=1.08:brightness=-0.05:saturation=0.9,colorbalance=rs=0.04:gs=0.0:bs=-0.05:rm=0.03:bm=-0.03"
+  },
+  "transkrip": {
+    "bahasa": "en",
+    "model": "parakeet-tdt-0.6b-v2-int8 (sherpa-onnx, cloud)"
+  },
+  "token_override": {
+    "_catatan": "Gaya proyek ini saja: 'tinta bara' — arang hangat, gading, aksen bara oranye; serif DM Serif Display untuk kata kunci, Montserrat isi/caption.",
+    "warna": {
+      "latar": "#0C0B0A",
+      "teks-utama": "#F3ECDF",
+      "teks-sekunder": "#CFC4B2",
+      "aksen": "#FF8A3D",
+      "aksen-2": "#FFC27A",
+      "peringatan": "#B4462B",
+      "panel": "#171513",
+      "panel-opasitas": 0.7,
+      "garis-panel": "#F3ECDF",
+      "garis-opasitas": 0.22,
+      "stroke": "#000000",
+      "bayangan": "#000000"
+    },
+    "font": {
+      "judul": {
+        "file": "DMSerifDisplay-Regular.ttf",
+        "family": "DM Serif Display",
+        "weight": 400,
+        "wght": 0
+      },
+      "subjudul": {
+        "file": "Montserrat-Bold.ttf",
+        "family": "Montserrat",
+        "weight": 700,
+        "wght": 0
+      },
+      "isi": {
+        "file": "Montserrat-SemiBold.ttf",
+        "family": "Montserrat",
+        "weight": 600,
+        "wght": 0
+      },
+      "caption": {
+        "file": "Montserrat-Bold.ttf",
+        "family": "Montserrat",
+        "weight": 700,
+        "wght": 0
+      },
+      "depth": {
+        "file": "DMSerifDisplay-Regular.ttf",
+        "family": "DM Serif Display",
+        "weight": 400,
+        "wght": 0
+      }
+    },
+    "motif": {
+      "aksen": "kotak",
+      "tekstur": null
+    },
+    "zona-aman": {
+      "kiri": 108
+    },
+    "caption": {
+      "kata-maks": 2
+    },
+    "qa": {
+      "karakter-per-detik-maks": 23
+    }
+  },
+  "terpakai": null,
+  "riwayat": [],
+  "layout": "split",
+  "qa": null
+}

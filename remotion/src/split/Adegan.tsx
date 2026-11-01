@@ -10,6 +10,7 @@ import {
   OtcaBuktiGear, OtcaCoret, OtcaKartu, OtcaPesawatPeta, OtcaRadar, OtcaRuangKuliah, OtcaSapa, OtcaSertifikatKampus, OtcaTangga,
   OtcaTimbangan,
 } from "./AdeganOtca";
+import { BaraBayang, BaraBerjuang, BaraCoba, BaraEnso, BaraPintu, BaraPodium, BaraSabuk, BaraSemalam, BaraSiklus, BaraTitikAwal } from "./AdeganBara";
 import { KoeyGuru, KoeyInterview, KoeyKaiwa, KoeyKartu, KoeyLevel, KoeyNilaiPlus, KoeyShare, KoeySimpan, KoeyVisa } from "./AdeganKoey";
 import { INOUT, Konteks, detik, drift, gambar, mix, prog, progE, tk } from "./alat";
 import {
@@ -555,6 +556,16 @@ export const PUSTAKA: Record<string, React.FC<PropsAdegan>> = {
   "otca-bukti-gear": OtcaBuktiGear,
   "otca-pesawat-peta": OtcaPesawatPeta,
   "otca-kartu": OtcaKartu,
+  "bara-coba": BaraCoba,
+  "bara-titik-awal": BaraTitikAwal,
+  "bara-semalam": BaraSemalam,
+  "bara-berjuang": BaraBerjuang,
+  "bara-sabuk": BaraSabuk,
+  "bara-podium": BaraPodium,
+  "bara-siklus": BaraSiklus,
+  "bara-bayang": BaraBayang,
+  "bara-pintu": BaraPintu,
+  "bara-enso": BaraEnso,
   "koey-visa": KoeyVisa,
   "koey-nilai-plus": KoeyNilaiPlus,
   "koey-interview": KoeyInterview,
