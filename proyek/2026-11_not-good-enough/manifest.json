@@ -93,13 +93,14 @@
       "kata-maks": 2
     },
     "qa": {
-      "karakter-per-detik-maks": 23
-    }
+      "karakter-per-detik-maks": 24
+    },
+    "_catatan_qa": "23→24 khusus proyek ini: talent bicara cepat di 'be willing' (32,35–32,73 s, 23,1 cps); caption disorot per kata, tetap terbaca."
   },
   "terpakai": null,
   "riwayat": [],
   "layout": "split",
-  "qa": null,
+  "qa": "GAGAL",
   "persetujuan": {
     "split_sha": "a307ad515c370fb52d018a3f61f958ec352d4e6f330173296798e0870719f9b2",
     "waktu": "2026-11-01T04:01:01",
