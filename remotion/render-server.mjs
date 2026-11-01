@@ -41,8 +41,11 @@ const siapkanBundle = async () => {
 };
 
 const serveUrl = await siapkanBundle();
-await ensureBrowser();
-const browser = await openBrowser("chrome", { logLevel: "error" });
+// VIDEO_CHROME = Chrome lokal; mesin cloud (tidak bisa mengunduh Chrome Headless Shell Remotion) → Chrome bawaan
+const CHROME_CLOUD = "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell";
+const browserExecutable = process.env.VIDEO_CHROME || (fs.existsSync(CHROME_CLOUD) ? CHROME_CLOUD : null);
+await ensureBrowser({ browserExecutable });
+const browser = await openBrowser("chrome", { browserExecutable, logLevel: "error" });
 
 const render = async ({ komposisi, props, out }) => {
   const composition = await selectComposition({ serveUrl, id: komposisi, inputProps: props, puppeteerInstance: browser,
