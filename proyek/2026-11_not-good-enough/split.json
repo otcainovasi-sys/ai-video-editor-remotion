@@ -1,0 +1,710 @@
+{
+  "_catatan": "You're Not Good Enough (Yet) — split L01, pustaka adegan bara-* (remotion/src/split/AdeganBara.tsx). Motif: ensō goyah & putus (S1) → ensō utuh + segel TRY (S10). Satu take, tanpa jump cut.",
+  "tinggi_panggung": 1000,
+  "caption_y": 965,
+  "caption_gaya": "pil",
+  "footage": {
+    "geser_y": 640,
+    "titik_zoom_y": 1150
+  },
+  "ketukan": {
+    "aktif": true,
+    "toleransi_potong": 0.0
+  },
+  "adegan": [
+    {
+      "modul": "bara-coba",
+      "mulai": 0,
+      "selesai": {
+        "kata": "everyone",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "t": {
+        "tidak": {
+          "kata": "not"
+        },
+        "stop": {
+          "kata": "stop"
+        },
+        "coba": {
+          "kata": "trying"
+        }
+      },
+      "keluar": "iris",
+      "titik": [
+        540,
+        770
+      ]
+    },
+    {
+      "modul": "bara-titik-awal",
+      "mulai": {
+        "kata": "everyone",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "selesai": {
+        "kata": "nobody",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "t": {
+        "mulai": {
+          "kata": "starts"
+        },
+        "mana": {
+          "kata": "somewhere"
+        }
+      },
+      "masuk": "iris",
+      "titik": [
+        540,
+        770
+      ]
+    },
+    {
+      "modul": "bara-semalam",
+      "mulai": {
+        "kata": "nobody",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "selesai": {
+        "kata": "you",
+        "ke": 2,
+        "offset": -0.25
+      },
+      "t": {
+        "hebat": {
+          "kata": "great"
+        },
+        "semalam": {
+          "kata": "overnight"
+        }
+      }
+    },
+    {
+      "modul": "bara-berjuang",
+      "mulai": {
+        "kata": "you",
+        "ke": 2,
+        "offset": -0.25
+      },
+      "selesai": {
+        "kata": "but",
+        "ke": 1,
+        "offset": -0.2
+      },
+      "t": {
+        "susah": {
+          "kata": "struggle"
+        },
+        "salah": {
+          "kata": "mistakes"
+        },
+        "progres": {
+          "kata": "progress"
+        }
+      }
+    },
+    {
+      "modul": "bara-sabuk",
+      "mulai": {
+        "kata": "but",
+        "ke": 1,
+        "offset": -0.2
+      },
+      "selesai": {
+        "kata": "you",
+        "ke": 3,
+        "offset": -0.1
+      },
+      "t": {
+        "ingat": {
+          "kata": "remember"
+        },
+        "pemula": {
+          "kata": "beginner"
+        },
+        "malu": {
+          "kata": "ashamed"
+        }
+      }
+    },
+    {
+      "modul": "bara-podium",
+      "mulai": {
+        "kata": "you",
+        "ke": 3,
+        "offset": -0.1
+      },
+      "selesai": {
+        "kata": "you",
+        "ke": 4,
+        "offset": -0.15
+      },
+      "t": {
+        "terbaik": {
+          "kata": "best"
+        },
+        "hari": {
+          "kata": "today"
+        }
+      }
+    },
+    {
+      "modul": "bara-siklus",
+      "mulai": {
+        "kata": "you",
+        "ke": 4,
+        "offset": -0.15
+      },
+      "selesai": {
+        "kata": "so",
+        "ke": 1,
+        "offset": -0.3
+      },
+      "t": {
+        "mau": {
+          "kata": "willing"
+        },
+        "belajar": {
+          "kata": "learn"
+        },
+        "baik": {
+          "kata": "improve"
+        },
+        "lagi": {
+          "kata": "again"
+        }
+      }
+    },
+    {
+      "modul": "bara-bayang",
+      "mulai": {
+        "kata": "so",
+        "ke": 1,
+        "offset": -0.3
+      },
+      "selesai": {
+        "kata": "from",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "t": {
+        "takut": {
+          "kata": "fear"
+        },
+        "buruk": {
+          "kata": "bad"
+        },
+        "henti": {
+          "kata": "stop",
+          "ke": 2,
+          "offset": 0.0
+        }
+      },
+      "keluar": "match"
+    },
+    {
+      "modul": "bara-pintu",
+      "mulai": {
+        "kata": "from",
+        "ke": 1,
+        "offset": -0.1
+      },
+      "selesai": {
+        "kata": "because",
+        "ke": 2,
+        "offset": -0.15
+      },
+      "t": {
+        "temukan": {
+          "kata": "discovering"
+        },
+        "mampu": {
+          "kata": "capable"
+        }
+      },
+      "masuk": "match",
+      "keluar": "iris",
+      "titik": [
+        540,
+        600
+      ]
+    },
+    {
+      "modul": "bara-enso",
+      "mulai": {
+        "kata": "because",
+        "ke": 2,
+        "offset": -0.15
+      },
+      "selesai": 56.3,
+      "t": {
+        "lebih": {
+          "kata": "better"
+        },
+        "coba": {
+          "kata": "try",
+          "ke": 2,
+          "offset": 0.0
+        }
+      },
+      "masuk": "iris",
+      "titik": [
+        540,
+        600
+      ]
+    }
+  ],
+  "zoom": [
+    [
+      0,
+      1.0
+    ],
+    [
+      {
+        "kata": "everyone",
+        "ke": 1,
+        "offset": -0.1
+      },
+      1.035
+    ],
+    [
+      {
+        "kata": "nobody",
+        "ke": 1,
+        "offset": -0.1
+      },
+      1.0
+    ],
+    [
+      {
+        "kata": "you",
+        "ke": 2,
+        "offset": -0.25
+      },
+      1.035
+    ],
+    [
+      {
+        "kata": "but",
+        "ke": 1,
+        "offset": -0.2
+      },
+      1.0
+    ],
+    [
+      {
+        "kata": "you",
+        "ke": 3,
+        "offset": -0.1
+      },
+      1.035
+    ],
+    [
+      {
+        "kata": "you",
+        "ke": 4,
+        "offset": -0.15
+      },
+      1.0
+    ],
+    [
+      {
+        "kata": "so",
+        "ke": 1,
+        "offset": -0.3
+      },
+      1.035
+    ],
+    [
+      {
+        "kata": "from",
+        "ke": 1,
+        "offset": -0.1
+      },
+      1.0
+    ],
+    [
+      {
+        "kata": "because",
+        "ke": 2,
+        "offset": -0.15
+      },
+      1.035
+    ]
+  ],
+  "musik": {
+    "file": "bawaan:lembut",
+    "db": -22,
+    "fade_masuk": 0.4,
+    "fade_keluar": 2.0
+  },
+  "sfx": [
+    {
+      "jenis": "gores-1",
+      "t": 0.05,
+      "db": -20
+    },
+    {
+      "jenis": "gores-2",
+      "t": {
+        "kata": "not",
+        "ke": 1,
+        "offset": 0.1
+      },
+      "db": -24
+    },
+    {
+      "jenis": "glitch-1",
+      "t": {
+        "kata": "good",
+        "ke": 1,
+        "offset": 0.1
+      },
+      "db": -27
+    },
+    {
+      "jenis": "tick-1",
+      "t": {
+        "kata": "stop"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "whoosh-pendek-1",
+      "t": {
+        "kata": "trying"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "kilau-1",
+      "t": {
+        "kata": "trying",
+        "ke": 1,
+        "offset": 0.2
+      },
+      "db": -24
+    },
+    {
+      "jenis": "whoosh-pendek-2",
+      "t": {
+        "kata": "everyone",
+        "ke": 1,
+        "offset": -0.25
+      },
+      "db": -22
+    },
+    {
+      "jenis": "pop-1",
+      "t": {
+        "kata": "starts"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "pop-2",
+      "t": {
+        "kata": "somewhere",
+        "ke": 1,
+        "offset": 0.1
+      },
+      "db": -24
+    },
+    {
+      "jenis": "pop-3",
+      "t": {
+        "kata": "somewhere",
+        "ke": 1,
+        "offset": 0.3
+      },
+      "db": -25
+    },
+    {
+      "jenis": "whoosh-pendek-3",
+      "t": {
+        "kata": "nobody",
+        "ke": 1,
+        "offset": -0.2
+      },
+      "db": -23
+    },
+    {
+      "jenis": "kilau-2",
+      "t": {
+        "kata": "great"
+      },
+      "db": -24
+    },
+    {
+      "jenis": "tick-2",
+      "t": {
+        "kata": "overnight",
+        "ke": 1,
+        "offset": 0.3
+      },
+      "db": -25
+    },
+    {
+      "jenis": "tick-3",
+      "t": {
+        "kata": "overnight",
+        "ke": 1,
+        "offset": 1.1
+      },
+      "db": -25
+    },
+    {
+      "jenis": "tick-1",
+      "t": {
+        "kata": "overnight",
+        "ke": 1,
+        "offset": 1.9
+      },
+      "db": -25
+    },
+    {
+      "jenis": "whoosh-pendek-1",
+      "t": {
+        "kata": "you",
+        "ke": 2,
+        "offset": -0.35
+      },
+      "db": -23
+    },
+    {
+      "jenis": "hit-1",
+      "t": {
+        "kata": "struggle"
+      },
+      "db": -24
+    },
+    {
+      "jenis": "ketuk-1",
+      "t": {
+        "kata": "mistakes"
+      },
+      "db": -21
+    },
+    {
+      "jenis": "ketuk-2",
+      "t": {
+        "kata": "mistakes",
+        "ke": 1,
+        "offset": 0.28
+      },
+      "db": -22
+    },
+    {
+      "jenis": "ketuk-3",
+      "t": {
+        "kata": "mistakes",
+        "ke": 1,
+        "offset": 0.56
+      },
+      "db": -22
+    },
+    {
+      "jenis": "glitch-2",
+      "t": {
+        "kata": "progress",
+        "ke": 1,
+        "offset": 0.3
+      },
+      "db": -25
+    },
+    {
+      "jenis": "whoosh-panjang-1",
+      "t": {
+        "kata": "but",
+        "ke": 1,
+        "offset": -0.3
+      },
+      "db": -23
+    },
+    {
+      "jenis": "gores-1",
+      "t": {
+        "kata": "beginner"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "kilau-1",
+      "t": {
+        "kata": "ashamed",
+        "ke": 1,
+        "offset": 0.3
+      },
+      "db": -22
+    },
+    {
+      "jenis": "whoosh-pendek-2",
+      "t": {
+        "kata": "you",
+        "ke": 3,
+        "offset": -0.2
+      },
+      "db": -23
+    },
+    {
+      "jenis": "hit-2",
+      "t": {
+        "kata": "best"
+      },
+      "db": -23
+    },
+    {
+      "jenis": "swoosh-balik-1",
+      "t": {
+        "kata": "today"
+      },
+      "db": -23
+    },
+    {
+      "jenis": "pop-1",
+      "t": {
+        "kata": "today",
+        "ke": 1,
+        "offset": 0.3
+      },
+      "db": -22
+    },
+    {
+      "jenis": "whoosh-pendek-3",
+      "t": {
+        "kata": "you",
+        "ke": 4,
+        "offset": -0.25
+      },
+      "db": -23
+    },
+    {
+      "jenis": "ding-benar-1",
+      "t": {
+        "kata": "learn"
+      },
+      "db": -24
+    },
+    {
+      "jenis": "pop-2",
+      "t": {
+        "kata": "improve"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "swoosh-balik-2",
+      "t": {
+        "kata": "again"
+      },
+      "db": -22
+    },
+    {
+      "jenis": "riser-1",
+      "t": {
+        "kata": "so",
+        "ke": 1,
+        "offset": -0.2
+      },
+      "db": -27
+    },
+    {
+      "jenis": "hit-1",
+      "t": {
+        "kata": "fear"
+      },
+      "db": -23
+    },
+    {
+      "jenis": "glitch-3",
+      "t": {
+        "kata": "bad"
+      },
+      "db": -26
+    },
+    {
+      "jenis": "hit-2",
+      "t": {
+        "kata": "stop",
+        "ke": 2,
+        "offset": 0.0
+      },
+      "db": -19
+    },
+    {
+      "jenis": "whoosh-panjang-2",
+      "t": {
+        "kata": "discovering",
+        "ke": 1,
+        "offset": -0.2
+      },
+      "db": -22
+    },
+    {
+      "jenis": "kilau-2",
+      "t": {
+        "kata": "capable"
+      },
+      "db": -21
+    },
+    {
+      "jenis": "whoosh-pendek-1",
+      "t": {
+        "kata": "because",
+        "ke": 2,
+        "offset": -0.25
+      },
+      "db": -23
+    },
+    {
+      "jenis": "gores-2",
+      "t": {
+        "kata": "because",
+        "ke": 2,
+        "offset": 0.1
+      },
+      "db": -25
+    },
+    {
+      "jenis": "riser-2",
+      "t": {
+        "kata": "chance",
+        "ke": 1,
+        "offset": -0.4
+      },
+      "db": -26
+    },
+    {
+      "jenis": "hit-1",
+      "t": {
+        "kata": "try",
+        "ke": 2,
+        "offset": 0.0
+      },
+      "db": -19
+    },
+    {
+      "jenis": "ding-benar-1",
+      "t": {
+        "kata": "try",
+        "ke": 2,
+        "offset": 0.1
+      },
+      "db": -22
+    },
+    {
+      "jenis": "kilau-1",
+      "t": {
+        "kata": "try",
+        "ke": 2,
+        "offset": 0.3
+      },
+      "db": -22
+    }
+  ]
+}

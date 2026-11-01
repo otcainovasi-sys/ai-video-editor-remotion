@@ -82,6 +82,7 @@ Tambahan (disetujui Zar 2026-10-29):
 - **Kebebasan penuh dalam desain motion di Remotion**: komposisi, transisi, tipografi kinetik, partikel, cahaya, parallax, dll. Tetap ikuti skill `remotion-best-practices` + kontrak proyek (token gaya, K05 gerak, K09 koreografi, zona aman).
 - **Selalu tingkatkan kualitas** dibanding video sebelumnya: tiap video minimal satu peningkatan nyata (efek baru, transisi lebih halus, hook lebih kuat), lalu simpan yang bagus sebagai modul pakai-ulang (item 10).
 - Standar hasil: **profesional, premium, sinematik — tidak pernah terlihat generik/template AI** (hindari gradien ungu default, animasi fade/slide polos seragam, teks tengah tanpa hierarki, stok ikon generik).
+- **Variasi layout per video (Zar, 2026-11-01):** jangan split terus sepanjang video. Selipkan beberapa **adegan full animasi** (motion graphics menutup seluruh frame selama beberapa detik, talent tidak tampak, suara tetap jalan) dan **cutback** (kembali ke talent full frame / split, mis. untuk penekanan atau reaksi). Ritme contoh: split → full animasi di kalimat kunci → cutback ke talent → split. Rencanakan di storyboard.
 - Batasan yang tetap berlaku: brand klien (mis. OTCA §5), alur storyboard → persetujuan (§1), spesifikasi ekspor (§2), dan QA LULUS.
 
 ## 9. Penyimpanan footage & hasil (aturan tetap Zar, 2026-10-28)
