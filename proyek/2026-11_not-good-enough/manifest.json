@@ -1,7 +1,7 @@
 {
   "proyek": "2026-11_not-good-enough",
   "judul": "You're Not Good Enough (Yet) — split, ensō bara",
-  "status": "render",
+  "status": "selesai",
   "skill": "video-editor@0.3",
   "gaya": "glass-tech@0.6",
   "template": "explainer@0.2",
@@ -100,7 +100,7 @@
   "terpakai": null,
   "riwayat": [],
   "layout": "split",
-  "qa": "GAGAL",
+  "qa": "LULUS",
   "persetujuan": {
     "split_sha": "a307ad515c370fb52d018a3f61f958ec352d4e6f330173296798e0870719f9b2",
     "waktu": "2026-11-01T04:01:01",
