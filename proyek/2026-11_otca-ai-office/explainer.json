@@ -1,0 +1,370 @@
+{
+  "_catatan": "Explainer 16:9 Blueprint AI Office 3D OTCA v3.1 (sumber: Blueprint_AI_Office_3D_OTCA_v3.1.pdf). Semua teks & waktu (detik) di sini; komposisi OfficeOtca (remotion/src/explainer/OfficeOtca.tsx) hanya menggambar. Penonton: staf kantor, bahasa sederhana. Audio: musik + SFX, tanpa narasi.",
+  "W": 1920,
+  "H": 1080,
+  "fps": 30,
+  "logo": "proyek/2026-11_otca-ai-office/logo-otca.png",
+  "warna": {
+    "hitam": "#000000",
+    "panel": "#0E0E0E",
+    "garis": "#2A2A2A",
+    "emas": "#CB9D31",
+    "emas_muda": "#FDF1A4",
+    "emas_tua": "#B3822C",
+    "putih": "#FFFFFF",
+    "redup": "#9198A4"
+  },
+  "brand": [
+    {
+      "nama": "Official OTCA",
+      "warna": "#CB9D31",
+      "agent": 5,
+      "meja": 6,
+      "fokus": "Brand utama · studi & pendidikan"
+    },
+    {
+      "nama": "Info Jerman",
+      "warna": "#F2CE45",
+      "agent": 3,
+      "meja": 4,
+      "fokus": "Bahasa Jerman · Goethe & TELC"
+    },
+    {
+      "nama": "Ciao Manda",
+      "warna": "#D30101",
+      "agent": 3,
+      "meja": 4,
+      "fokus": "Mandarin · China & Taiwan"
+    },
+    {
+      "nama": "Jepang Koey",
+      "warna": "#FCE3E3",
+      "aksen": "#D40000",
+      "agent": 3,
+      "meja": 4,
+      "fokus": "Bahasa & budaya Jepang"
+    }
+  ],
+  "adegan": [
+    {
+      "id": "hook",
+      "mulai": 0,
+      "durasi": 6.2,
+      "teks": {
+        "eyebrow": "Blueprint v3.1",
+        "judul": "AI Office 3D",
+        "brand": "OTCA",
+        "sub": "Kantor AI untuk 4 brand"
+      }
+    },
+    {
+      "id": "kantor",
+      "mulai": 6.2,
+      "durasi": 9.3,
+      "teks": {
+        "judul": "Bayangkan\nkantor sungguhan.",
+        "sub": "Bedanya: karyawannya AI.",
+        "akhir": "Semuanya di 1 server sewaan · Contabo 24 GB"
+      },
+      "pos": [
+        {
+          "nama": "Satpam",
+          "asli": "Cloudflare",
+          "ikon": "perisai",
+          "t": 1.2
+        },
+        {
+          "nama": "Resepsionis",
+          "asli": "API & antrean",
+          "ikon": "lonceng",
+          "t": 1.8
+        },
+        {
+          "nama": "Karyawan",
+          "asli": "AI Agent",
+          "ikon": "orang",
+          "t": 2.4
+        },
+        {
+          "nama": "Buku SOP",
+          "asli": "Paket konteks",
+          "ikon": "buku",
+          "t": 3.0
+        },
+        {
+          "nama": "Bendahara",
+          "asli": "LiteLLM",
+          "ikon": "koin",
+          "t": 3.6
+        },
+        {
+          "nama": "Arsip & CCTV",
+          "asli": "R2 · Langfuse",
+          "ikon": "kamera",
+          "t": 4.2
+        }
+      ],
+      "t_server": 6.6
+    },
+    {
+      "id": "gedung",
+      "mulai": 15.5,
+      "durasi": 9.5,
+      "teks": {
+        "judul": "4 brand. 14 agent.",
+        "sub": "Satu lantai per brand: SOP, akun, dan memori tidak tercampur."
+      },
+      "t_lantai": [
+        0.6,
+        1.4,
+        2.2,
+        3.0
+      ],
+      "t_hitung": 3.6
+    },
+    {
+      "id": "agent",
+      "mulai": 25.0,
+      "durasi": 12.0,
+      "teks": {
+        "judul": "5 AI Agent",
+        "sub": "Satu pekerjaan, satu penanggung jawab."
+      },
+      "kartu": [
+        {
+          "nama": "Content Creator",
+          "kpi": "Konten approved & engagement",
+          "ikon": "pena",
+          "tag": "",
+          "t": 1.0
+        },
+        {
+          "nama": "Video Editor",
+          "kpi": "Waktu produksi & kualitas",
+          "ikon": "film",
+          "tag": "Opus 5.5",
+          "t": 1.6
+        },
+        {
+          "nama": "Social Media Manager",
+          "kpi": "Reach & response",
+          "ikon": "chat",
+          "tag": "",
+          "t": 2.2
+        },
+        {
+          "nama": "Digital Marketing",
+          "kpi": "Leads, CPL, ROAS",
+          "ikon": "target",
+          "tag": "OTCA",
+          "t": 2.8
+        },
+        {
+          "nama": "Event Specialist",
+          "kpi": "Kesiapan event",
+          "ikon": "kalender",
+          "tag": "OTCA",
+          "t": 3.4
+        }
+      ],
+      "t_catatan": 6.0,
+      "catatan": "Info Jerman, Ciao Manda & Jepang Koey: 3 agent + Manager; brief iklan/event ke OTCA."
+    },
+    {
+      "id": "alur",
+      "mulai": 37.0,
+      "durasi": 16.0,
+      "teks": {
+        "judul": "Perjalanan satu tugas",
+        "tugas": "“Buatkan 3 caption Reels Jepang Koey: festival musim dingin”"
+      },
+      "langkah": [
+        {
+          "nama": "Gerbang",
+          "ket": "Cloudflare + login Google",
+          "ikon": "perisai",
+          "t": 1.6
+        },
+        {
+          "nama": "Resepsionis",
+          "ket": "Cek akses, nomor antrean",
+          "ikon": "lonceng",
+          "t": 3.0
+        },
+        {
+          "nama": "Manager AI",
+          "ket": "Pilih karyawan yang tepat",
+          "ikon": "cabang",
+          "t": 4.4
+        },
+        {
+          "nama": "Content Creator",
+          "ket": "Baca SOP brand, menulis",
+          "ikon": "pena",
+          "t": 5.8
+        },
+        {
+          "nama": "Bendahara",
+          "ket": "LiteLLM mencatat biaya",
+          "ikon": "koin",
+          "t": 7.2
+        },
+        {
+          "nama": "Kantor 3D",
+          "ket": "Avatar terlihat mengetik",
+          "ikon": "layar",
+          "t": 8.6
+        },
+        {
+          "nama": "Approval",
+          "ket": "Reviewer setuju / revisi",
+          "ikon": "centang",
+          "t": 10.0
+        },
+        {
+          "nama": "Posting",
+          "ket": "Terekam di Langfuse & arsip",
+          "ikon": "kirim",
+          "t": 11.4
+        }
+      ]
+    },
+    {
+      "id": "approval",
+      "mulai": 53.0,
+      "durasi": 8.5,
+      "teks": {
+        "judul": "AI menyiapkan. Manusia menyetujui.",
+        "sub": "Iklan dibuat dalam keadaan mati; hanya Budget Approver yang menyalakan."
+      },
+      "baris": [
+        {
+          "kerja": "Konten",
+          "oleh": "Mbak Nia / reviewer",
+          "t": 1.6
+        },
+        {
+          "kerja": "Iklan (Ads)",
+          "oleh": "Marketing",
+          "t": 2.2
+        },
+        {
+          "kerja": "Aktivasi & budget",
+          "oleh": "Budget Approver",
+          "t": 2.8
+        },
+        {
+          "kerja": "Testimoni",
+          "oleh": "Consent pemilik cerita",
+          "t": 3.4
+        }
+      ],
+      "t_saklar": 5.2
+    },
+    {
+      "id": "budget",
+      "mulai": 61.5,
+      "durasi": 10.0,
+      "teks": {
+        "judul": "Uang dibagi ke amplop.",
+        "sub": "Kerugian terburuk sudah pasti: sebesar isi amplop.",
+        "total": "±Rp1,55 jt",
+        "total_ket": "per bulan selama uji coba · VPS + AI + gambar"
+      },
+      "amplop": [
+        {
+          "nama": "Pool umum",
+          "isi": 20,
+          "ket": "Menulis: caption, naskah, analisis",
+          "t": 1.2
+        },
+        {
+          "nama": "Pool video",
+          "isi": 20,
+          "ket": "Opus 5.5 menyusun rencana edit",
+          "t": 1.9
+        },
+        {
+          "nama": "Pool gambar",
+          "isi": 10,
+          "ket": "±200 gambar AI",
+          "t": 2.6
+        }
+      ],
+      "t_total": 5.0
+    },
+    {
+      "id": "roadmap",
+      "mulai": 71.5,
+      "durasi": 10.0,
+      "teks": {
+        "judul": "9 level · 47 hari kerja",
+        "mvp": "MVP siap diuji · hari ke-9"
+      },
+      "level": [
+        {
+          "kode": "L0",
+          "nama": "Fondasi",
+          "hari": 3
+        },
+        {
+          "kode": "L1",
+          "nama": "Agent pertama",
+          "hari": 6
+        },
+        {
+          "kode": "L2",
+          "nama": "4 brand + login",
+          "hari": 4
+        },
+        {
+          "kode": "L3",
+          "nama": "Kantor 3D",
+          "hari": 6
+        },
+        {
+          "kode": "L4",
+          "nama": "Content Creator",
+          "hari": 5
+        },
+        {
+          "kode": "L5",
+          "nama": "Video Editor",
+          "hari": 7
+        },
+        {
+          "kode": "L6",
+          "nama": "Event",
+          "hari": 6
+        },
+        {
+          "kode": "L7",
+          "nama": "Digital Marketing",
+          "hari": 5
+        },
+        {
+          "kode": "L8",
+          "nama": "Hardening + pilot",
+          "hari": 5
+        }
+      ],
+      "t_mulai": 0.8,
+      "t_mvp": 3.2
+    },
+    {
+      "id": "penutup",
+      "mulai": 81.5,
+      "durasi": 6.0,
+      "teks": {
+        "judul": "Bekerja 24 jam.",
+        "sub": "Tetap dengan tanda tangan manusia.",
+        "kaki": "AI Office 3D OTCA · Blueprint v3.1"
+      }
+    }
+  ],
+  "musik": {
+    "file": "bawaan:pulsa",
+    "db": -18,
+    "fade_keluar": 2.0
+  }
+}

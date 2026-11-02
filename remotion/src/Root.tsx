@@ -29,6 +29,8 @@ import { GrowthCurve, GrowthCurveElemen, HeadlineStorm, HeadlineStormElemen, Liq
 import { BabBaru, BabBaruElemen, DuaLinimasa, DuaLinimasaElemen, KinetikKata, KinetikKataElemen, Lintasan,
          LintasanElemen } from "./compositions/Reflektif";
 import { SplitReel, SplitReelProps } from "./split/SplitReel";
+import { OfficeOtca, OfficeOtcaProps } from "./explainer/OfficeOtca";
+import officeOtca from "../../proyek/2026-11_otca-ai-office/explainer.json";
 import { PropsDasar, Tokens } from "./lib/kontrak";
 import platform from "../../tokens/TOKEN_00_platform_v0.4.json";
 import glass from "../../tokens/TOKEN_01_glass-tech_v0.3.json";
@@ -177,6 +179,12 @@ export const RemotionRoot: React.FC = () => (
       defaultProps={dasar({ judul: "A *different* chapter", sub: "of your life", kepala: "Chapter", nomor: "II", durasi_masuk: 0,
         durasi_keluar: 0, jadwal: { balik: [0.4, 0.8, 1.2], judul: 1.9, dorong: 1.8 } }, 5.5) as PropsDasar<BabBaruElemen>} />
     {/* Layout split talking-head (pipeline/scripts/split.py). Studio: split.py studio <proyek> mengisi --props. */}
+        {/* Explainer 16:9 Blueprint AI Office 3D OTCA: teks & waktu dari proyek/2026-11_otca-ai-office/explainer.json */}
+    <Composition id="OfficeOtca" component={OfficeOtca} defaultProps={officeOtca as unknown as OfficeOtcaProps}
+      calculateMetadata={({ props }) => {
+        const akhir = props.adegan[props.adegan.length - 1];
+        return { durationInFrames: Math.round((akhir.mulai + akhir.durasi) * props.fps), fps: props.fps, width: props.W, height: props.H };
+      }} />
     <Composition id="SplitReel" component={SplitReel}
       calculateMetadata={({ props }: { props: SplitReelProps }) => ({ durationInFrames: props.durasiFrame, fps: props.fps,
         width: props.W, height: props.H })}
