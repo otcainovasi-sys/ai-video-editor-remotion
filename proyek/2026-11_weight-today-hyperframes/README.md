@@ -1,12 +1,12 @@
 # WEIGHT TODAY — HyperFrames R2
 
-R2 adds user-requested rotoscope and a graphics-first composition. Read `out/storyboard-r2.html` and `out/qa-storyboard-r2.md` for the current revision. R1 comparison is retained under `out/r1` and in `beat-sheet-r1.json`. No full final render is authorized by the rotoscope revision alone.
+R2 adds user-requested rotoscope and a graphics-first composition. Read `out/storyboard-r2.html` and `out/qa-storyboard-r2.md` for the current revision. R1 comparison is retained under `out/r1` and in `beat-sheet-r1.json`. R2 storyboard and final render were explicitly approved by the user: “ya jalankan render final”.
 
 Rotoscope assets: `roto_talent.py` runs continuous RVM and caches alpha; `compare_portrait.py` uses the existing pipeline rembg/BiRefNet portrait backend for anchor masks; `refine_matte.py` propagates these with bidirectional optical flow, constrains alpha, and encodes cropped VP9 alpha. `mask_proof.py` creates a short silent dark/light-backplate QA clip. These are intermediate assets, not the final edited video.
 
 New native assets live in `illustrations.py`; their per-component choreography remains in `beat-sheet.json`. `revise_r2.py` is one-time migration, not the normal build command. Use `storyboard_r2.py` for R2 reports after screenshots/check; the original `make_storyboard.py` is R1-only.
 
-Current stage: storyboard/edit composition, waiting for user design approval. No final MP4 has been rendered. User confirmed the corrected sentence at 35–41 s, not the design.
+Current stage: rendered. Delivery: `out/WEIGHT-TODAY-FINAL.mp4`. Technical QA and sampled actual-export visual review are recorded in `out/qa-final-r2.json`; full real-time artistic playback/headphone review remains unverified.
 
 - Review: `out/storyboard.html`, `out/storyboard-contact.jpg`, `out/analisis.md`, `out/qa-storyboard.md`.
 - Source of timing, headings, choreography: `beat-sheet.json`; output/identity: `manifest.json`; words: `cache/words.json`.
@@ -24,3 +24,5 @@ From repository root:
 `hf.ps1` points to the installed cached CLI and Chrome; all cache/temp paths are on D:. If npm cache is removed, reinstall the pinned version and update this path. `prepare_edit.py` is bootstrap only and refuses an existing project. `extract_motion.cjs` was used once to move reviewed choreography into beat-sheet data; do not run it to undo user edits.
 
 Read QA before rendering. Still review does not verify artistic playback, final mix, or word-level timing of the inserted “don’t”. Do not mark these passed automatically. Source media/cache images are local artifacts; back them up with the project folder.
+
+Finalization: after approved HyperFrames render, run `final_audio.py`, `final_export.py`, then `finish_delivery.py`. These scripts retain the approved picture and original narration. Generated media stays local and is excluded from Git.

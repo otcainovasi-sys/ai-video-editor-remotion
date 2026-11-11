@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "time": 5.15,
+      "peak_dbfs": -27,
+      "label": "weight contact"
+    },
+    {
+      "time": 7.05,
+      "peak_dbfs": -27,
+      "label": "weight contact"
+    },
+    {
+      "time": 8.75,
+      "peak_dbfs": -27,
+      "label": "weight contact"
+    },
+    {
+      "time": 19.15,
+      "peak_dbfs": -34,
+      "label": "soft bag movement"
+    },
+    {
+      "time": 43.35,
+      "peak_dbfs": -29,
+      "label": "single closing step"
+    }
+  ],
+  "pre_normalization": {
+    "input_i": "-28.69",
+    "input_tp": "-10.88",
+    "input_lra": "6.90",
+    "input_thresh": "-39.83",
+    "output_i": "-15.10",
+    "output_tp": "-2.50",
+    "output_lra": "4.90",
+    "output_thresh": "-26.03",
+    "normalization_type": "dynamic",
+    "target_offset": "1.10"
+  },
+  "master": {
+    "lufs": -14.4,
+    "true_peak": -2.5
+  },
+  "music": "none; original narration retained"
+}
