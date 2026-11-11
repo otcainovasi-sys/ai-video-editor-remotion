@@ -1,0 +1,1128 @@
+{
+  "version": "r1",
+  "caption": {
+    "language": "en",
+    "max_words": 5,
+    "font_size": 54
+  },
+  "beats": [
+    {
+      "id": "hook",
+      "mulai": 0,
+      "selesai": 4.15,
+      "layout": "portrait",
+      "title": "Some days feel",
+      "emphasis": "heavy.",
+      "action": "Beban dikenalkan lewat kata heavy turun dan frame merespons sedikit; wajah menjadi pusat emosi.",
+      "hero": 1.65,
+      "fungsi": "hook",
+      "transition": null
+    },
+    {
+      "id": "load",
+      "mulai": 4.15,
+      "selesai": 12.8,
+      "layout": "split",
+      "title": "So much to",
+      "emphasis": "carry.",
+      "action": "Tiga lembar responsibilities, expectations, future mendarat pada baki; baki turun bertahap. Talent tetap terlihat.",
+      "hero": 5.8,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "honest",
+      "mulai": 12.8,
+      "selesai": 18.55,
+      "layout": "portrait",
+      "title": "Trying to stay",
+      "emphasis": "strong.",
+      "action": "Cutback ke wajah dalam bingkai besar. Penekanan strong menjadi kontras dengan ucapan exhausted; beri ruang pada ekspresi, tanpa dekorasi yang mengalihkan perhatian.",
+      "hero": 14.45,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "release",
+      "mulai": 18.55,
+      "selesai": 23.1,
+      "layout": "full",
+      "title": "Not everything.",
+      "emphasis": "Not today.",
+      "action": "Tumpukan kartu membuka ruang; satu lembar TODAY maju, lembar lain bergeser terpisah. Bukan daftar tugas baru.",
+      "hero": 20.2,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "pause",
+      "mulai": 23.1,
+      "selesai": 26.55,
+      "layout": "split",
+      "title": "Take a",
+      "emphasis": "break.",
+      "action": "Dua batang pause menapak; garis terburu-buru berhenti di depan simbol. Gerak melambat mengikuti slow down.",
+      "hero": 24.75,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "tired",
+      "mulai": 26.55,
+      "selesai": 30.95,
+      "layout": "full",
+      "title": "Tired ≠",
+      "emphasis": "weak.",
+      "action": "Kartu TIRED dan WEAK dipisahkan garis tidak sama dengan yang tergambar; penguatan makna tanpa klaim energi kuantitatif.",
+      "hero": 28.2,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "rest",
+      "mulai": 30.95,
+      "selesai": 35.25,
+      "layout": "split",
+      "title": "A break ≠",
+      "emphasis": "giving up.",
+      "action": "Jalur terputus oleh tempat istirahat lalu berlanjut; penanda berhenti sebentar, bukan jatuh keluar jalur.",
+      "hero": 32.6,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "today",
+      "mulai": 35.25,
+      "selesai": 42.05,
+      "layout": "full",
+      "title": "One day.",
+      "emphasis": "At a time.",
+      "action": "TODAY berada di depan, TOMORROW lebih jauh. Penanda bergerak dari hari esok menuju hari ini. Teks kalimat telah dikonfirmasi pengguna; waktu don’t perlu dicek pada playback.",
+      "hero": 36.9,
+      "fungsi": "konteks",
+      "transition": "paper-cover"
+    },
+    {
+      "id": "step",
+      "mulai": 42.05,
+      "selesai": 46.566,
+      "layout": "portrait",
+      "title": "One step.",
+      "emphasis": "That’s enough.",
+      "action": "Kembali ke wajah dengan judul One step dan That’s enough. Tahan ekspresi serta caption akhir; tanpa CTA tambahan.",
+      "hero": 43.7,
+      "fungsi": "ajakan",
+      "transition": "paper-cover"
+    }
+  ],
+  "motion": [
+    {
+      "method": "from",
+      "target": "#scene-hook .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 0.15
+    },
+    {
+      "method": "from",
+      "target": "#scene-hook .title",
+      "vars": {
+        "x": -8,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 0.22
+    },
+    {
+      "method": "from",
+      "target": "#scene-hook .emphasis",
+      "vars": {
+        "y": -10,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 0.31
+    },
+    {
+      "method": "from",
+      "target": "#frame-hook",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 0.25
+    },
+    {
+      "method": "to",
+      "target": "#frame-hook",
+      "vars": {
+        "y": 12,
+        "rotation": -1,
+        "duration": 0.25,
+        "ease": "power2.out"
+      },
+      "at": 3.2
+    },
+    {
+      "method": "from",
+      "target": "#scene-load .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 4.4
+    },
+    {
+      "method": "from",
+      "target": "#scene-load .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 4.470000000000001
+    },
+    {
+      "method": "from",
+      "target": "#scene-load .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 4.5600000000000005
+    },
+    {
+      "method": "from",
+      "target": "#frame-load",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 4.5
+    },
+    {
+      "method": "from",
+      "target": "#graphic-load",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 4.5
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 3.8900000000000006
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 3.8900000000000006
+    },
+    {
+      "method": "set",
+      "target": "#scene-hook",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 4.15
+    },
+    {
+      "method": "set",
+      "target": "#scene-load",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 4.15
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 4.16
+    },
+    {
+      "method": "from",
+      "target": "#load-card-0",
+      "vars": {
+        "x": -75,
+        "opacity": 0,
+        "duration": 0.55,
+        "ease": "power3.out"
+      },
+      "at": 4.5
+    },
+    {
+      "method": "to",
+      "target": "#load-tray",
+      "vars": {
+        "y": 7,
+        "duration": 0.24,
+        "ease": "power2.out"
+      },
+      "at": 4.9
+    },
+    {
+      "method": "from",
+      "target": "#load-card-1",
+      "vars": {
+        "x": 75,
+        "opacity": 0,
+        "duration": 0.55,
+        "ease": "power3.out"
+      },
+      "at": 6.2
+    },
+    {
+      "method": "to",
+      "target": "#load-tray",
+      "vars": {
+        "y": 14,
+        "duration": 0.24,
+        "ease": "power2.out"
+      },
+      "at": 6.6000000000000005
+    },
+    {
+      "method": "from",
+      "target": "#load-card-2",
+      "vars": {
+        "x": -75,
+        "opacity": 0,
+        "duration": 0.55,
+        "ease": "power3.out"
+      },
+      "at": 8
+    },
+    {
+      "method": "to",
+      "target": "#load-tray",
+      "vars": {
+        "y": 21,
+        "duration": 0.24,
+        "ease": "power2.out"
+      },
+      "at": 8.4
+    },
+    {
+      "method": "from",
+      "target": "#scene-honest .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 13.05
+    },
+    {
+      "method": "from",
+      "target": "#scene-honest .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 13.120000000000001
+    },
+    {
+      "method": "from",
+      "target": "#scene-honest .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 13.21
+    },
+    {
+      "method": "from",
+      "target": "#frame-honest",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 13.15
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 12.540000000000001
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 12.540000000000001
+    },
+    {
+      "method": "set",
+      "target": "#scene-load",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 12.8
+    },
+    {
+      "method": "set",
+      "target": "#scene-honest",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 12.8
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 12.81
+    },
+    {
+      "method": "from",
+      "target": "#scene-release .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 18.8
+    },
+    {
+      "method": "from",
+      "target": "#scene-release .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 18.87
+    },
+    {
+      "method": "from",
+      "target": "#scene-release .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 18.96
+    },
+    {
+      "method": "from",
+      "target": "#graphic-release",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 18.900000000000002
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 18.29
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 18.29
+    },
+    {
+      "method": "set",
+      "target": "#scene-honest",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 18.55
+    },
+    {
+      "method": "set",
+      "target": "#scene-release",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 18.55
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 18.560000000000002
+    },
+    {
+      "method": "to",
+      "target": "#release-back",
+      "vars": {
+        "x": 95,
+        "y": -75,
+        "rotation": 8,
+        "duration": 1.1,
+        "ease": "power2.inOut"
+      },
+      "at": 19.3
+    },
+    {
+      "method": "from",
+      "target": "#release-today",
+      "vars": {
+        "x": -55,
+        "y": 40,
+        "rotation": -8,
+        "duration": 0.8,
+        "ease": "power3.out"
+      },
+      "at": 20.1
+    },
+    {
+      "method": "from",
+      "target": "#scene-pause .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 23.35
+    },
+    {
+      "method": "from",
+      "target": "#scene-pause .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 23.42
+    },
+    {
+      "method": "from",
+      "target": "#scene-pause .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 23.51
+    },
+    {
+      "method": "from",
+      "target": "#frame-pause",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 23.450000000000003
+    },
+    {
+      "method": "from",
+      "target": "#graphic-pause",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 23.450000000000003
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 22.84
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 22.84
+    },
+    {
+      "method": "set",
+      "target": "#scene-release",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 23.1
+    },
+    {
+      "method": "set",
+      "target": "#scene-pause",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 23.1
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 23.110000000000003
+    },
+    {
+      "method": "from",
+      "target": "#pause-bars",
+      "vars": {
+        "scaleY": 0.1,
+        "transformOrigin": "50% 100%",
+        "duration": 0.55,
+        "ease": "back.out(1.1)"
+      },
+      "at": 23.5
+    },
+    {
+      "method": "from",
+      "target": "#pause-line",
+      "vars": {
+        "scaleX": 0,
+        "transformOrigin": "0% 50%",
+        "duration": 1.2,
+        "ease": "power3.out"
+      },
+      "at": 23.3
+    },
+    {
+      "method": "from",
+      "target": "#scene-tired .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 26.8
+    },
+    {
+      "method": "from",
+      "target": "#scene-tired .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 26.87
+    },
+    {
+      "method": "from",
+      "target": "#scene-tired .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 26.96
+    },
+    {
+      "method": "from",
+      "target": "#graphic-tired",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 26.900000000000002
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 26.29
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 26.29
+    },
+    {
+      "method": "set",
+      "target": "#scene-pause",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 26.55
+    },
+    {
+      "method": "set",
+      "target": "#scene-tired",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 26.55
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 26.560000000000002
+    },
+    {
+      "method": "from",
+      "target": "#tired-left",
+      "vars": {
+        "x": 120,
+        "rotation": -4,
+        "duration": 0.65,
+        "ease": "power2.out"
+      },
+      "at": 27
+    },
+    {
+      "method": "from",
+      "target": "#tired-right",
+      "vars": {
+        "x": -120,
+        "rotation": 4,
+        "duration": 0.8,
+        "ease": "power3.out"
+      },
+      "at": 27.2
+    },
+    {
+      "method": "from",
+      "target": "#tired-sign",
+      "vars": {
+        "scale": 0,
+        "transformOrigin": "50% 50%",
+        "duration": 0.4,
+        "ease": "back.out(1.1)"
+      },
+      "at": 28.4
+    },
+    {
+      "method": "from",
+      "target": "#tired-rule",
+      "vars": {
+        "scaleX": 0,
+        "transformOrigin": "0% 50%",
+        "duration": 0.6,
+        "ease": "sine.out"
+      },
+      "at": 29
+    },
+    {
+      "method": "from",
+      "target": "#scene-rest .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 31.2
+    },
+    {
+      "method": "from",
+      "target": "#scene-rest .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 31.27
+    },
+    {
+      "method": "from",
+      "target": "#scene-rest .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 31.36
+    },
+    {
+      "method": "from",
+      "target": "#frame-rest",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 31.3
+    },
+    {
+      "method": "from",
+      "target": "#graphic-rest",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 31.3
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 30.689999999999998
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 30.689999999999998
+    },
+    {
+      "method": "set",
+      "target": "#scene-tired",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 30.95
+    },
+    {
+      "method": "set",
+      "target": "#scene-rest",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 30.95
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 30.96
+    },
+    {
+      "method": "to",
+      "target": "#rest-dot",
+      "vars": {
+        "x": 240,
+        "duration": 1.1,
+        "ease": "power2.out"
+      },
+      "at": 31.4
+    },
+    {
+      "method": "to",
+      "target": "#rest-dot",
+      "vars": {
+        "x": 380,
+        "y": -120,
+        "duration": 0.9,
+        "ease": "power2.inOut"
+      },
+      "at": 33.2
+    },
+    {
+      "method": "to",
+      "target": "#rest-dot",
+      "vars": {
+        "x": 600,
+        "duration": 0.65,
+        "ease": "sine.out"
+      },
+      "at": 34.1
+    },
+    {
+      "method": "from",
+      "target": "#scene-today .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 35.5
+    },
+    {
+      "method": "from",
+      "target": "#scene-today .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 35.57
+    },
+    {
+      "method": "from",
+      "target": "#scene-today .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 35.66
+    },
+    {
+      "method": "from",
+      "target": "#graphic-today",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.45,
+        "ease": "sine.out"
+      },
+      "at": 35.6
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 34.99
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 34.99
+    },
+    {
+      "method": "set",
+      "target": "#scene-rest",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 35.25
+    },
+    {
+      "method": "set",
+      "target": "#scene-today",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 35.25
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 35.26
+    },
+    {
+      "method": "to",
+      "target": "#tomorrow-card",
+      "vars": {
+        "x": 30,
+        "y": -30,
+        "rotation": 5,
+        "duration": 1,
+        "ease": "power2.inOut"
+      },
+      "at": 36
+    },
+    {
+      "method": "to",
+      "target": "#today-dot",
+      "vars": {
+        "x": -210,
+        "y": 290,
+        "duration": 1.4,
+        "ease": "power3.inOut"
+      },
+      "at": 38
+    },
+    {
+      "method": "from",
+      "target": "#today-card",
+      "vars": {
+        "y": 60,
+        "rotation": -5,
+        "duration": 0.8,
+        "ease": "back.out(1.05)"
+      },
+      "at": 37.3
+    },
+    {
+      "method": "from",
+      "target": "#scene-step .eyebrow",
+      "vars": {
+        "opacity": 0,
+        "duration": 0.35,
+        "ease": "sine.out"
+      },
+      "at": 42.3
+    },
+    {
+      "method": "from",
+      "target": "#scene-step .title",
+      "vars": {
+        "x": -36,
+        "opacity": 0,
+        "duration": 0.48,
+        "ease": "power3.out"
+      },
+      "at": 42.37
+    },
+    {
+      "method": "from",
+      "target": "#scene-step .emphasis",
+      "vars": {
+        "y": -28,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "back.out(1.15)"
+      },
+      "at": 42.459999999999994
+    },
+    {
+      "method": "from",
+      "target": "#frame-step",
+      "vars": {
+        "y": 55,
+        "rotation": 0,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power2.out"
+      },
+      "at": 42.4
+    },
+    {
+      "method": "set",
+      "target": "#wipe",
+      "vars": {
+        "x": -1080
+      },
+      "at": 41.79
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 0,
+        "duration": 0.26,
+        "ease": "power3.inOut"
+      },
+      "at": 41.79
+    },
+    {
+      "method": "set",
+      "target": "#scene-today",
+      "vars": {
+        "opacity": 0
+      },
+      "at": 42.05
+    },
+    {
+      "method": "set",
+      "target": "#scene-step",
+      "vars": {
+        "opacity": 1
+      },
+      "at": 42.05
+    },
+    {
+      "method": "to",
+      "target": "#wipe",
+      "vars": {
+        "x": 1080,
+        "duration": 0.32,
+        "ease": "power3.inOut"
+      },
+      "at": 42.059999999999995
+    }
+  ],
+  "graphic_labels": [
+    "RESPONSIBILITIES",
+    "EXPECTATIONS",
+    "THE FUTURE",
+    "TODAY",
+    "TIRED",
+    "WEAK",
+    "TOMORROW"
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "ringkas": {
+    "video": "D:\\KERJAAN\\CONTENT CREATOR\\NAZARVERSE\\referensi video 2.mp4",
+    "fps_analisis": 5.0,
+    "durasi": 34.0,
+    "segmen": 8,
+    "potongan_keras": 7,
+    "peristiwa": 0,
+    "shot": 8,
+    "rata_durasi_shot": 4.25,
+    "potong_per_menit": 14.1,
+    "ganti_visual_per_detik": 0.24,
+    "persen_wajah": 0.94,
+    "persen_berteks": 0.06
+  },
+  "gerak_per_detik": [
+    16.78,
+    9.31,
+    18.19,
+    17.43,
+    25.36,
+    9.68,
+    18.8,
+    18.34,
+    18.94,
+    19.97,
+    26.8,
+    19.03,
+    28.27,
+    10.16,
+    13.05,
+    13.58,
+    18.29,
+    20.76,
+    27.37,
+    17.38,
+    8.54,
+    20.1,
+    17.82,
+    24.16,
+    16.47,
+    15.36,
+    17.5,
+    8.82,
+    20.03,
+    21.08,
+    19.25,
+    13.83,
+    11.32,
+    10.35
+  ],
+  "shot": [
+    {
+      "no": 1,
+      "mulai": 0.0,
+      "selesai": 10.8,
+      "durasi": 10.8,
+      "gerak": 18.17,
+      "puncak_gerak": 2,
+      "teks": 0.0237,
+      "wajah": true,
+      "kotak_wajah": [
+        0.5056,
+        0.2758,
+        0.8,
+        0.4911
+      ],
+      "warna": [
+        "#3A5C35",
+        "#90866E",
+        "#CDC8BC"
+      ],
+      "awal": "potong",
+      "slot": "hook",
+      "alasan": "shot pertama"
+    },
+    {
+      "no": 2,
+      "mulai": 10.8,
+      "selesai": 12.0,
+      "durasi": 1.2,
+      "gerak": 19.03,
+      "puncak_gerak": 0,
+      "teks": 0.0104,
+      "wajah": true,
+      "kotak_wajah": [
+        0.175,
+        0.2293,
+        0.6444,
+        0.5726
+      ],
+      "warna": [
+        "#335831",
+        "#C2B7A6",
+        "#83775C"
+      ],
+      "awal": "potong",
+      "slot": "talking head (caption)",
+      "alasan": "wajah, hampir tanpa teks"
+    },
+    {
+      "no": 3,
+      "mulai": 12.0,
+      "selesai": 14.0,
+      "durasi": 2.0,
+      "gerak": 15.57,
+      "puncak_gerak": 0,
+      "teks": 0.0194,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#3E5D35",
+        "#21180E",
+        "#E8D8A4"
+      ],
+      "awal": "potong",
+      "slot": "cutaway gerak (orbit / ui-world / broll)",
+      "alasan": "tanpa wajah, gerak tinggi"
+    },
+    {
+      "no": 4,
+      "mulai": 14.0,
+      "selesai": 14.4,
+      "durasi": 0.4,
+      "gerak": 7.32,
+      "puncak_gerak": 0,
+      "teks": 0.0,
+      "wajah": true,
+      "kotak_wajah": [
+        0.2889,
+        0.3707,
+        0.6306,
+        0.6205
+      ],
+      "warna": [
+        "#3D6C3E",
+        "#2C562D",
+        "#5E8B5E"
+      ],
+      "awal": "potong",
+      "slot": "talking head (caption)",
+      "alasan": "wajah, hampir tanpa teks"
+    },
+    {
+      "no": 5,
+      "mulai": 14.4,
+      "selesai": 19.2,
+      "durasi": 4.8,
+      "gerak": 19.01,
+      "puncak_gerak": 5,
+      "teks": 0.0157,
+      "wajah": true,
+      "kotak_wajah": [
+        0.0,
+        0.6312,
+        0.4333,
+        0.9481
+      ],
+      "warna": [
+        "#3C5D3B",
+        "#808581",
+        "#EAE9DF"
+      ],
+      "awal": "potong",
+      "slot": "kamera: digital-zoom",
+      "alasan": "talking head dengan 5 lonjakan gerak (punch-in)"
+    },
+    {
+      "no": 6,
+      "mulai": 19.2,
+      "selesai": 21.0,
+      "durasi": 1.8,
+      "gerak": 10.41,
+      "puncak_gerak": 0,
+      "teks": 0.0062,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3056,
+        0.2582,
+        0.6361,
+        0.4999
+      ],
+      "warna": [
+        "#366235",
+        "#78855F",
+        "#D4B699"
+      ],
+      "awal": "potong",
+      "slot": "talking head (caption)",
+      "alasan": "wajah, hampir tanpa teks"
+    },
+    {
+      "no": 7,
+      "mulai": 21.0,
+      "selesai": 23.0,
+      "durasi": 2.0,
+      "gerak": 17.22,
+      "puncak_gerak": 0,
+      "teks": 0.0346,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3222,
+        0.0906,
+        0.6222,
+        0.31
+      ],
+      "warna": [
+        "#396238",
+        "#161815",
+        "#CAB79A"
+      ],
+      "awal": "potong",
+      "slot": "info/chip di atas talking head",
+      "alasan": "wajah + teks sedang"
+    },
+    {
+      "no": 8,
+      "mulai": 23.0,
+      "selesai": 34.0,
+      "durasi": 11.0,
+      "gerak": 15.9,
+      "puncak_gerak": 2,
+      "teks": 0.0217,
+      "wajah": true,
+      "kotak_wajah": [
+        0.1639,
+        0.1648,
+        0.6694,
+        0.5345
+      ],
+      "warna": [
+        "#284327",
+        "#C9B791",
+        "#70674B"
+      ],
+      "awal": "potong",
+      "slot": "kamera: digital-zoom",
+      "alasan": "talking head dengan 2 lonjakan gerak (punch-in)"
+    }
+  ]
+}

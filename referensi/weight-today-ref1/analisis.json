@@ -1,0 +1,446 @@
+{
+  "ringkas": {
+    "video": "D:\\KERJAAN\\CONTENT CREATOR\\NAZARVERSE\\Referensi video.mp4",
+    "fps_analisis": 5.0,
+    "durasi": 63.4,
+    "segmen": 18,
+    "potongan_keras": 11,
+    "peristiwa": 6,
+    "shot": 18,
+    "rata_durasi_shot": 3.52,
+    "potong_per_menit": 17.0,
+    "ganti_visual_per_detik": 0.28,
+    "persen_wajah": 0.13,
+    "persen_berteks": 1.0
+  },
+  "gerak_per_detik": [
+    15.96,
+    8.76,
+    2.1,
+    2.69,
+    4.44,
+    34.61,
+    8.99,
+    3.07,
+    3.25,
+    25.55,
+    31.75,
+    3.72,
+    0.45,
+    9.16,
+    9.42,
+    0.43,
+    3.63,
+    0.91,
+    21.21,
+    58.3,
+    6.9,
+    15.75,
+    12.32,
+    0.47,
+    0.54,
+    0.44,
+    0.51,
+    0.18,
+    0.05,
+    0.08,
+    0.26,
+    25.11,
+    1.66,
+    1.04,
+    15.24,
+    1.57,
+    1.28,
+    0.79,
+    9.39,
+    22.92,
+    12.49,
+    6.48,
+    2.82,
+    3.33,
+    25.44,
+    2.6,
+    13.69,
+    1.15,
+    1.64,
+    1.72,
+    8.86,
+    1.76,
+    3.16,
+    14.34,
+    7.68,
+    3.11,
+    1.56,
+    1.93,
+    3.66,
+    32.78,
+    9.42,
+    0.4,
+    0.04,
+    0.02
+  ],
+  "shot": [
+    {
+      "no": 1,
+      "mulai": 0.0,
+      "selesai": 5.0,
+      "durasi": 5.0,
+      "gerak": 7.07,
+      "puncak_gerak": 0,
+      "teks": 0.0407,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#BBBDB5",
+        "#306EB1",
+        "#3D3932"
+      ],
+      "awal": "potong",
+      "slot": "hook",
+      "alasan": "shot pertama"
+    },
+    {
+      "no": 2,
+      "mulai": 5.0,
+      "selesai": 5.4,
+      "durasi": 0.4,
+      "gerak": 78.76,
+      "puncak_gerak": 0,
+      "teks": 0.0406,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#F1F0EE",
+        "#CCCAC8",
+        "#806248"
+      ],
+      "awal": "potong",
+      "slot": "transisi",
+      "alasan": "shot sangat pendek + gerak tinggi"
+    },
+    {
+      "no": 3,
+      "mulai": 5.4,
+      "selesai": 6.2,
+      "durasi": 0.8,
+      "gerak": 12.11,
+      "puncak_gerak": 0,
+      "teks": 0.0843,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DBD8D4",
+        "#3A3735",
+        "#988978"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 4,
+      "mulai": 6.2,
+      "selesai": 9.6,
+      "durasi": 3.4,
+      "gerak": 4.5,
+      "puncak_gerak": 0,
+      "teks": 0.0479,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#BFBDBB",
+        "#3270B3",
+        "#433D35"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 5,
+      "mulai": 9.6,
+      "selesai": 14.0,
+      "durasi": 4.4,
+      "gerak": 14.46,
+      "puncak_gerak": 2,
+      "teks": 0.0626,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#011E43",
+        "#F9F9F9",
+        "#B48D69"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 6,
+      "mulai": 14.0,
+      "selesai": 19.6,
+      "durasi": 5.6,
+      "gerak": 12.92,
+      "puncak_gerak": 2,
+      "teks": 0.0966,
+      "wajah": false,
+      "kotak_wajah": [
+        0.0722,
+        0.1059,
+        0.8639,
+        0.6848
+      ],
+      "warna": [
+        "#021E43",
+        "#F8F9FA",
+        "#A49778"
+      ],
+      "awal": "peristiwa",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 7,
+      "mulai": 19.6,
+      "selesai": 21.8,
+      "durasi": 2.2,
+      "gerak": 7.91,
+      "puncak_gerak": 0,
+      "teks": 0.0462,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DCD9D4",
+        "#383534",
+        "#9A8A77"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 8,
+      "mulai": 21.8,
+      "selesai": 31.8,
+      "durasi": 10.0,
+      "gerak": 2.66,
+      "puncak_gerak": 0,
+      "teks": 0.089,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#F3F8F7",
+        "#A3A1A2",
+        "#45443C"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 9,
+      "mulai": 31.8,
+      "selesai": 34.4,
+      "durasi": 2.6,
+      "gerak": 1.26,
+      "puncak_gerak": 0,
+      "teks": 0.0318,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DCD9D4",
+        "#353333",
+        "#998977"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 10,
+      "mulai": 34.4,
+      "selesai": 38.4,
+      "durasi": 4.0,
+      "gerak": 2.12,
+      "puncak_gerak": 0,
+      "teks": 0.0928,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3611,
+        0.4961,
+        0.6889,
+        0.7358
+      ],
+      "warna": [
+        "#EDECEB",
+        "#A79E97",
+        "#4A463F"
+      ],
+      "awal": "potong",
+      "slot": "info/chip di atas talking head",
+      "alasan": "wajah + teks sedang"
+    },
+    {
+      "no": 11,
+      "mulai": 38.4,
+      "selesai": 39.4,
+      "durasi": 1.0,
+      "gerak": 5.9,
+      "puncak_gerak": 0,
+      "teks": 0.0344,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3528,
+        0.4762,
+        0.7111,
+        0.7382
+      ],
+      "warna": [
+        "#D5D2CD",
+        "#948981",
+        "#4C473B"
+      ],
+      "awal": "peristiwa",
+      "slot": "info/chip di atas talking head",
+      "alasan": "wajah + teks sedang"
+    },
+    {
+      "no": 12,
+      "mulai": 39.4,
+      "selesai": 40.8,
+      "durasi": 1.4,
+      "gerak": 19.82,
+      "puncak_gerak": 0,
+      "teks": 0.0474,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DFD9DA",
+        "#514C4B",
+        "#CF3C13"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 13,
+      "mulai": 40.8,
+      "selesai": 44.4,
+      "durasi": 3.6,
+      "gerak": 6.68,
+      "puncak_gerak": 0,
+      "teks": 0.0438,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#EDEBEF",
+        "#6E3D2D",
+        "#99959C"
+      ],
+      "awal": "peristiwa",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 14,
+      "mulai": 44.4,
+      "selesai": 46.0,
+      "durasi": 1.6,
+      "gerak": 6.95,
+      "puncak_gerak": 0,
+      "teks": 0.0434,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DBD8D3",
+        "#363432",
+        "#968774"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 15,
+      "mulai": 46.0,
+      "selesai": 50.6,
+      "durasi": 4.6,
+      "gerak": 4.32,
+      "puncak_gerak": 2,
+      "teks": 0.0667,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#E9E7E4",
+        "#9D948C",
+        "#373B3E"
+      ],
+      "awal": "peristiwa",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 16,
+      "mulai": 50.6,
+      "selesai": 53.6,
+      "durasi": 3.0,
+      "gerak": 2.77,
+      "puncak_gerak": 0,
+      "teks": 0.0807,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3639,
+        0.5102,
+        0.6917,
+        0.7498
+      ],
+      "warna": [
+        "#DBD8D7",
+        "#958B85",
+        "#373B3C"
+      ],
+      "awal": "peristiwa",
+      "slot": "info/chip di atas talking head",
+      "alasan": "wajah + teks sedang"
+    },
+    {
+      "no": 17,
+      "mulai": 53.6,
+      "selesai": 59.6,
+      "durasi": 6.0,
+      "gerak": 5.54,
+      "puncak_gerak": 0,
+      "teks": 0.0605,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#DBD8D3",
+        "#353332",
+        "#968673"
+      ],
+      "awal": "peristiwa",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    },
+    {
+      "no": 18,
+      "mulai": 59.6,
+      "selesai": 63.4,
+      "durasi": 3.8,
+      "gerak": 6.41,
+      "puncak_gerak": 0,
+      "teks": 0.1705,
+      "wajah": false,
+      "kotak_wajah": null,
+      "warna": [
+        "#F9FAFA",
+        "#1F446C",
+        "#899E50"
+      ],
+      "awal": "potong",
+      "slot": "perangkat cutaway (bukti/langkah)",
+      "alasan": "tanpa wajah, ada blok teks/UI"
+    }
+  ]
+}

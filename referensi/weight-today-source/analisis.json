@@ -1,0 +1,139 @@
+{
+  "ringkas": {
+    "video": "D:\\KERJAAN\\CONTENT CREATOR\\NAZARVERSE\\WEIGHT TODAY.mp4",
+    "fps_analisis": 3.0,
+    "durasi": 46.67,
+    "segmen": 3,
+    "potongan_keras": 0,
+    "peristiwa": 2,
+    "shot": 3,
+    "rata_durasi_shot": 15.56,
+    "potong_per_menit": 3.9,
+    "ganti_visual_per_detik": 0.06,
+    "persen_wajah": 1.0,
+    "persen_berteks": 0.0
+  },
+  "gerak_per_detik": [
+    5.52,
+    4.81,
+    4.69,
+    5.25,
+    4.26,
+    3.87,
+    4.37,
+    3.48,
+    4.87,
+    3.61,
+    4.03,
+    2.32,
+    2.61,
+    3.12,
+    3.47,
+    3.01,
+    5.08,
+    3.07,
+    2.27,
+    2.85,
+    3.24,
+    2.87,
+    2.46,
+    4.25,
+    2.41,
+    2.39,
+    2.74,
+    2.36,
+    2.5,
+    2.49,
+    3.19,
+    2.41,
+    3.13,
+    2.74,
+    2.02,
+    2.59,
+    2.94,
+    3.02,
+    2.85,
+    3.46,
+    3.67,
+    1.67,
+    3.79,
+    3.35,
+    2.98,
+    3.74,
+    2.87
+  ],
+  "shot": [
+    {
+      "no": 1,
+      "mulai": 0.0,
+      "selesai": 0.67,
+      "durasi": 0.67,
+      "gerak": 7.74,
+      "puncak_gerak": 0,
+      "teks": 0.0,
+      "wajah": true,
+      "kotak_wajah": [
+        0.3167,
+        0.4402,
+        0.775,
+        0.7754
+      ],
+      "warna": [
+        "#BCB3A2",
+        "#1B1D1F",
+        "#886C54"
+      ],
+      "awal": "potong",
+      "slot": "hook",
+      "alasan": "shot pertama"
+    },
+    {
+      "no": 2,
+      "mulai": 0.67,
+      "selesai": 3.33,
+      "durasi": 2.67,
+      "gerak": 4.71,
+      "puncak_gerak": 0,
+      "teks": 0.0001,
+      "wajah": true,
+      "kotak_wajah": [
+        0.25,
+        0.4707,
+        0.6806,
+        0.7855
+      ],
+      "warna": [
+        "#BAB1A0",
+        "#1A1C1F",
+        "#816852"
+      ],
+      "awal": "peristiwa",
+      "slot": "talking head (caption)",
+      "alasan": "wajah, hampir tanpa teks"
+    },
+    {
+      "no": 3,
+      "mulai": 3.33,
+      "selesai": 46.67,
+      "durasi": 43.33,
+      "gerak": 3.13,
+      "puncak_gerak": 0,
+      "teks": 0.001,
+      "wajah": true,
+      "kotak_wajah": [
+        0.2722,
+        0.4891,
+        0.6833,
+        0.7897
+      ],
+      "warna": [
+        "#B6AE9E",
+        "#181A1C",
+        "#7B6450"
+      ],
+      "awal": "peristiwa",
+      "slot": "talking head (caption)",
+      "alasan": "wajah, hampir tanpa teks"
+    }
+  ]
+}

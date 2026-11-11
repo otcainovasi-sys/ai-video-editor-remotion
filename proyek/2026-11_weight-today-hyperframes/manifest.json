@@ -1,0 +1,54 @@
+{
+  "proyek": "2026-11_weight-today-hyperframes",
+  "judul": "WEIGHT TODAY",
+  "status": "storyboard-draft",
+  "engine": "hyperframes",
+  "engine_version": "0.9.33",
+  "persetujuan": null,
+  "duration": 46.566,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "aset": {
+    "rekaman": "aset/rekaman/take1.mp4"
+  },
+  "palette": {
+    "green": "#213F32",
+    "paper": "#F3EDDC",
+    "yellow": "#E8BF47",
+    "brown": "#946448",
+    "ink": "#15271F"
+  },
+  "fonts": {
+    "sans": "Franklin Heavy",
+    "serif": "DM Serif"
+  },
+  "safe": {
+    "left": 60,
+    "right": 120,
+    "top": 250,
+    "bottom": 400
+  },
+  "modules": [
+    "G11@0.5 (adapted)",
+    "T02@0.2 (source narration retained)",
+    "K00@0.2",
+    "K01@0.2",
+    "K05@0.2",
+    "K09@0.2",
+    "K11@0.1",
+    "K12@0.1",
+    "K13@0.1",
+    "K14@0.1"
+  ],
+  "audio": {
+    "source_retained": true,
+    "target_lufs": -14,
+    "true_peak": -2,
+    "music": "none in r1; preserve source while checking speech"
+  },
+  "transcript_review": {
+    "corrected": false,
+    "confirmed_segment": "35.31–41.09 text confirmed by user; inserted word timing estimated, requires playback review"
+  }
+}
