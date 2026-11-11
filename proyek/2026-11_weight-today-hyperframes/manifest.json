@@ -1,7 +1,7 @@
 {
   "proyek": "2026-11_weight-today-hyperframes",
   "judul": "WEIGHT TODAY",
-  "status": "storyboard-draft",
+  "status": "storyboard-revision",
   "engine": "hyperframes",
   "engine_version": "0.9.33",
   "persetujuan": null,
@@ -50,5 +50,18 @@
   "transcript_review": {
     "corrected": false,
     "confirmed_segment": "35.31–41.09 text confirmed by user; inserted word timing estimated, requires playback review"
-  }
+  },
+  "revision": "r2",
+  "roto": {
+    "backend": "rvm-plus-portrait-guidance",
+    "source_crop": [
+      0,
+      270,
+      478,
+      540
+    ],
+    "asset": "hyperframes/assets/talent-r2.webm",
+    "approval": "User authorized rotoscope and layout variation; final storyboard approval pending"
+  },
+  "direction": "Graphics first: short labels, native illustrated assets dominate, complete spoken captions retained."
 }

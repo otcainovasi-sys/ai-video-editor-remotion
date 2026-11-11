@@ -1,5 +1,10 @@
 # WEIGHT TODAY — HyperFrames
 
+## Revisi pengguna R2
+Hilangkan background lemari/ruangan dengan rotoscope halus. Variasikan cutout dan layout dengan kualitas premium. Tambahkan aset agar motion grafis lebih dominan daripada tulisan. Subtitle lengkap tetap dipertahankan. Izin ini mencakup persiapan mask, uji singkat lokal dan revisi storyboard; belum menjadi persetujuan render final desain baru.
+
+R2 memakai 9 ilustrasi native: beban, timbangan, tali, tas, bangku/jam, tanaman, jalur istirahat, kalender, batu pijakan. Label hanya satu frasa pendek. Close-up mask diperiksa di hijau dan gading; sisa furnitur pada rambut yang ditemukan pada uji RVM dikoreksi melalui panduan BiRefNet yang dilacak antarframe.
+
 Instruksi pengguna: analisis WEIGHT TODAY dan dua referensi, mulai edit dengan pipeline video-system, gunakan HyperFrames; tidak memakai Remotion.
 
 Sumber: aset/rekaman/take1.mp4, salinan tanpa perubahan dari file pengguna. 46.566 s, 478×850, 30 fps, H.264 + AAC.

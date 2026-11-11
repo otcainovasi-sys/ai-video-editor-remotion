@@ -1,6 +1,7 @@
 """Data-driven project adapter: beat-sheet + manifest -> editable HyperFrames HTML."""
 from pathlib import Path
 import json, html
+from illustrations import illustration
 P=Path(__file__).parent; H=P/'hyperframes'
 m=json.loads((P/'manifest.json').read_text(encoding='utf-8')); data=json.loads((P/'beat-sheet.json').read_text(encoding='utf-8')); beats=data['beats']
 words=json.loads((P/'cache/words.json').read_text(encoding='utf-8'))['kata']
@@ -22,6 +23,21 @@ css='''
 '''
 for key in ['green','paper','yellow','ink']: css=css.replace(key.upper(),c[key])
 css += '.caption{z-index:100;display:block;padding-top:25px}.caption .words{display:block;max-width:840px}.portrait .emphasis{font-size:112px}#scene-step .emphasis{font-size:92px}.opening-label{position:absolute;left:70px;top:1620px;font-size:25px;letter-spacing:5px;z-index:1}'
+if data.get('version')=='r2':
+    css+='''
+    .title,.split .title{font-size:58px;letter-spacing:-1px;line-height:1.1;max-width:880px}.scene-content{padding-top:265px}.eyebrow,.emphasis{display:none}
+    .frame,.split .frame{padding:0;background:none;box-shadow:none;transform:none;overflow:visible;left:250px;top:550px;width:690px;height:780px}
+    .frame:after{display:none}.frame video,.split .frame video{position:relative;z-index:2;object-fit:contain;object-position:center bottom;width:100%;height:100%}
+    .frame:before{content:'';position:absolute;inset:140px 20px 5px;border-radius:50% 50% 4px 4px;background:#D6CDB5;opacity:.14}
+    .graphic,.split .graphic{left:80px;top:415px;width:880px;height:880px}
+    .split .graphic{top:345px;height:560px}.split .frame{left:490px;top:840px;width:435px;height:490px}
+    #graphic-hook{left:80px;top:440px;width:360px;height:340px}#frame-hook{left:250px;top:550px}
+    #frame-honest{left:65px;top:670px;width:570px;height:645px}#graphic-honest{left:530px;top:435px;width:410px;height:580px}
+    #frame-load{left:75px;top:850px;width:425px;height:480px}#frame-load:before{background:#E8BF47;opacity:.12}
+    #graphic-pause{left:80px;top:350px;width:800px;height:570px}#frame-pause{left:490px}
+    #graphic-step{left:70px;top:425px;width:490px;height:650px}#frame-step{left:440px;top:755px;width:510px;height:575px}
+    #frame-step:before{border-radius:160px 0 0 0;background:#E8BF47;opacity:.12}.graphic text{font-family:'Franklin Heavy',sans-serif}
+    '''
 def svg(content,view='0 0 840 640'):
     return f'<svg viewBox="{view}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">{content}</svg>'
 def rect(x,y,w,h,fill=None,extra=''):
@@ -49,10 +65,19 @@ def graphic(id):
 parts=[]; anim=[]
 for i,b in enumerate(beats):
     id=b['id']; s=b['mulai']; e=b['selesai']; layout=b['layout']
-    content=f'<section class="scene {layout}" id="scene-{id}" data-beat="{esc(id)}"><div class="scene-content"><div class="eyebrow">{i+1:02d} / FIELD NOTES</div><h1 class="title">{esc(b["title"])}</h1><div class="emphasis">{esc(b["emphasis"])}</div></div>'
+    if data.get('version')=='r2':
+        content=f'<section class="scene {layout}" id="scene-{id}" data-beat="{esc(id)}"><div class="scene-content"><h1 class="title">{esc(b["label"])}</h1></div>'
+    else:content=f'<section class="scene {layout}" id="scene-{id}" data-beat="{esc(id)}"><div class="scene-content"><div class="eyebrow">{i+1:02d} / FIELD NOTES</div><h1 class="title">{esc(b["title"])}</h1><div class="emphasis">{esc(b["emphasis"])}</div></div>'
     if layout!='full':
-        content+=f'<div class="frame" id="frame-{id}"><video class="clip" id="video-{id}" src="assets/source.mp4" muted playsinline data-start="{s}" data-duration="{e-s}" data-media-start="{s}" data-track-index="0"></video></div>'
-    g=graphic(id)
+        media='talent-r2.webm' if data.get('version')=='r2' else 'source.mp4'
+        content+=f'<div class="frame" id="frame-{id}"><video class="clip" id="video-{id}" src="assets/{media}" muted playsinline data-start="{s}" data-duration="{min(e,46.533333)-s}" data-media-start="{s}" data-track-index="0"></video></div>'
+    g=illustration(id,c) if data.get('version')=='r2' else graphic(id)
+    if data.get('version')=='r2' and id=='load':
+        # Parent the left weight to the balance assembly so its contact follows the pan.
+        a=g.index('<g id="scale-weight-c">');z=g.index('</g></g></g>',a)+12
+        weight_group=g[a:z];g=g[:a]+g[z:]
+        boundary=g.index('</g><g id="scale-right">')
+        g=g[:boundary]+weight_group+g[boundary:]
     if g: content+=f'<div class="graphic" id="graphic-{id}">{g}</div>'
     content+='</section>'; parts.append(content)
 # Choreography is versioned in beat-sheet.json, separate from the renderer.
@@ -76,7 +101,7 @@ for k,g in enumerate(groups):
         anim.append(f'tl.set("#w-{k}-{j}",{{color:"{c["yellow"]}"}},{w["s"]});')
         anim.append(f'tl.set("#w-{k}-{j}",{{color:"{c["paper"]}"}},{w["e"]});')
 parts.append(f'<div class="opening-label" data-layout-ignore>WEIGHT TODAY</div><audio id="voice" src="assets/source.mp4" data-start="0" data-duration="{D}" data-track-index="9" data-volume="1"></audio><div class="wipe" id="wipe" data-layout-ignore></div>')
-doc=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>WEIGHT TODAY · R1</title><script src="assets/gsap.min.js"></script><style>{css}</style></head><body><div id="root" data-composition-id="weight-today" data-start="0" data-duration="{D}" data-width="1080" data-height="1920">'+''.join(parts)+'</div><script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});\n'+'\n'.join(anim)+'\nwindow.__timelines["weight-today"]=tl;</script></body></html>'
+doc=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>WEIGHT TODAY · {data.get("version","r1").upper()}</title><script src="assets/gsap.min.js"></script><style>{css}</style></head><body><div id="root" data-composition-id="weight-today" data-start="0" data-duration="{D}" data-width="1080" data-height="1920">'+''.join(parts)+'</div><script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});\n'+'\n'.join(anim)+'\nwindow.__timelines["weight-today"]=tl;</script></body></html>'
 (H/'index.html').write_text(doc,encoding='utf-8')
 print(f'Built {len(beats)} scenes, {len(groups)} caption groups: {H / "index.html"}')
 

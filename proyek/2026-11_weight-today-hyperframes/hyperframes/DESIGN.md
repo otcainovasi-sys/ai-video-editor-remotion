@@ -1,5 +1,12 @@
 # WEIGHT TODAY — Field notes on resilience
 
+## R2 — approved scope of revision
+User requested smooth rotoscope, premium composition variation, and more native graphic assets than headline text. The new visual priority is illustrated mechanisms, talent cutouts and complete spoken captions. Headlines become short 58 px labels; the earlier 92–144 px title treatment below is superseded for R2. No room/furniture should remain visible. Source-resolution limitations still apply.
+
+Portraits vary: direct cutout with an inset weight sculpture, left-aligned intimate portrait with rope metaphor, small companion cutout beside an illustration, and right-aligned closing portrait with stepping stones. Full graphic passages use backpack, resilient plant, path/bench and calendar. Assets consist of independently animated SVG components, with tactile restrained gradients on metal/fabric. Cream surfaces remain warm; no neon or glass.
+
+Matte workflow: continuous RVM foreground/alpha; pipeline BiRefNet portrait masks anchor clean boundaries; bidirectional optical flow propagates guidance between anchors. Soft edge support limits RVM background leakage. No hard uniform cutout blur; inspect light and dark backplates and adjacent frames. This is a project adapter and does not change the shared roto backend.
+
 ## Style Prompt
 Kolase editorial yang hangat dan dewasa: kertas gading, bidang hijau hutan, label kuning, foto talent berbingkai. Mengambil tata susun tak simetris dan frame bersusun dari referensi kedua, serta penjelasan visual yang berkembang dan cutback dari referensi pertama. Rasa reflektif, tegas, pribadi; bukan tutorial kantor atau UI teknologi. Bentuk dan mekanisme mengikuti ucapan setelah transkripsi.
 

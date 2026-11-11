@@ -1,4 +1,10 @@
-# WEIGHT TODAY — HyperFrames R1
+# WEIGHT TODAY — HyperFrames R2
+
+R2 adds user-requested rotoscope and a graphics-first composition. Read `out/storyboard-r2.html` and `out/qa-storyboard-r2.md` for the current revision. R1 comparison is retained under `out/r1` and in `beat-sheet-r1.json`. No full final render is authorized by the rotoscope revision alone.
+
+Rotoscope assets: `roto_talent.py` runs continuous RVM and caches alpha; `compare_portrait.py` uses the existing pipeline rembg/BiRefNet portrait backend for anchor masks; `refine_matte.py` propagates these with bidirectional optical flow, constrains alpha, and encodes cropped VP9 alpha. `mask_proof.py` creates a short silent dark/light-backplate QA clip. These are intermediate assets, not the final edited video.
+
+New native assets live in `illustrations.py`; their per-component choreography remains in `beat-sheet.json`. `revise_r2.py` is one-time migration, not the normal build command. Use `storyboard_r2.py` for R2 reports after screenshots/check; the original `make_storyboard.py` is R1-only.
 
 Current stage: storyboard/edit composition, waiting for user design approval. No final MP4 has been rendered. User confirmed the corrected sentence at 35–41 s, not the design.
 

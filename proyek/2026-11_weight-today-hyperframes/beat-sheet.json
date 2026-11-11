@@ -1,5 +1,5 @@
 {
-  "version": "r1",
+  "version": "r2",
   "caption": {
     "language": "en",
     "max_words": 5,
@@ -13,10 +13,11 @@
       "layout": "portrait",
       "title": "Some days feel",
       "emphasis": "heavy.",
-      "action": "Beban dikenalkan lewat kata heavy turun dan frame merespons sedikit; wajah menjadi pusat emosi.",
+      "action": "Beban logam menggantung dan turun; garis penahan merespons. Talent cutout besar di kanan, tanpa ruangan asli.",
       "hero": 1.65,
       "fungsi": "hook",
-      "transition": null
+      "transition": null,
+      "label": "Heavy days."
     },
     {
       "id": "load",
@@ -25,10 +26,11 @@
       "layout": "split",
       "title": "So much to",
       "emphasis": "carry.",
-      "action": "Tiga lembar responsibilities, expectations, future mendarat pada baki; baki turun bertahap. Talent tetap terlihat.",
+      "action": "Beban datang bergiliran ke kedua mangkuk timbangan; batang miring lalu pulih sebagian. Talent cutout kecil mendampingi.",
       "hero": 5.8,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "A lot to carry."
     },
     {
       "id": "honest",
@@ -37,10 +39,11 @@
       "layout": "portrait",
       "title": "Trying to stay",
       "emphasis": "strong.",
-      "action": "Cutback ke wajah dalam bingkai besar. Penekanan strong menjadi kontras dengan ucapan exhausted; beri ruang pada ekspresi, tanpa dekorasi yang mengalihkan perhatian.",
+      "action": "Tali tertarik oleh beban, melengkung dan mereda. Talent cutout asimetris memberi ruang pada ekspresi lelah.",
       "hero": 14.45,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Still trying."
     },
     {
       "id": "release",
@@ -49,10 +52,11 @@
       "layout": "full",
       "title": "Not everything.",
       "emphasis": "Not today.",
-      "action": "Tumpukan kartu membuka ruang; satu lembar TODAY maju, lembar lain bergeser terpisah. Bukan daftar tugas baru.",
+      "action": "Tas membuka tutup; dua beban dikeluarkan dan badan tas naik sedikit. Suara tetap berjalan di grafis penuh.",
       "hero": 20.2,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Make some space."
     },
     {
       "id": "pause",
@@ -61,10 +65,11 @@
       "layout": "split",
       "title": "Take a",
       "emphasis": "break.",
-      "action": "Dua batang pause menapak; garis terburu-buru berhenti di depan simbol. Gerak melambat mengikuti slow down.",
+      "action": "Bangku hadir sebagai tempat jeda. Jarum jam melambat; daun mengikuti gerak sisa kecil. Talent cutout menjadi pendamping.",
       "hero": 24.75,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Take a break."
     },
     {
       "id": "tired",
@@ -73,22 +78,24 @@
       "layout": "full",
       "title": "Tired ≠",
       "emphasis": "weak.",
-      "action": "Kartu TIRED dan WEAK dipisahkan garis tidak sama dengan yang tergambar; penguatan makna tanpa klaim energi kuantitatif.",
+      "action": "Tanaman menekuk oleh hembusan dan pulih; akarnya tetap tertanam. Metafora lelah tanpa menyamakan lelah dengan lemah.",
       "hero": 28.2,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Tired is not weak."
     },
     {
       "id": "rest",
       "mulai": 30.95,
       "selesai": 35.25,
-      "layout": "split",
+      "layout": "full",
       "title": "A break ≠",
       "emphasis": "giving up.",
-      "action": "Jalur terputus oleh tempat istirahat lalu berlanjut; penanda berhenti sebentar, bukan jatuh keluar jalur.",
+      "action": "Sepasang jejak mengikuti jalur, berhenti di bangku, lalu melanjutkan. Grafis penuh tanpa headline panjang.",
       "hero": 32.6,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Rest. Then continue."
     },
     {
       "id": "today",
@@ -97,10 +104,11 @@
       "layout": "full",
       "title": "One day.",
       "emphasis": "At a time.",
-      "action": "TODAY berada di depan, TOMORROW lebih jauh. Penanda bergerak dari hari esok menuju hari ini. Teks kalimat telah dikonfirmasi pengguna; waktu don’t perlu dicek pada playback.",
+      "action": "Lembar TOMORROW dibuka ke samping, memperlihatkan TODAY; satu area hari ini ditandai. Label singkat saja.",
       "hero": 36.9,
       "fungsi": "konteks",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "Just today."
     },
     {
       "id": "step",
@@ -109,119 +117,79 @@
       "layout": "portrait",
       "title": "One step.",
       "emphasis": "That’s enough.",
-      "action": "Kembali ke wajah dengan judul One step dan That’s enough. Tahan ekspresi serta caption akhir; tanpa CTA tambahan.",
+      "action": "Satu pasang jejak mendarat di batu pertama; batu berikutnya tetap tenang. Cutout talent dan senyum menutup narasi.",
       "hero": 43.7,
       "fungsi": "ajakan",
-      "transition": "paper-cover"
+      "transition": "paper-cover",
+      "label": "One step is enough."
     }
   ],
   "motion": [
     {
       "method": "from",
-      "target": "#scene-hook .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
-        "ease": "sine.out"
-      },
-      "at": 0.15
-    },
-    {
-      "method": "from",
       "target": "#scene-hook .title",
       "vars": {
-        "x": -8,
-        "duration": 0.48,
+        "x": -18,
+        "opacity": 1,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 0.22
+      "at": 0.18
     },
     {
       "method": "from",
-      "target": "#scene-hook .emphasis",
+      "target": "#graphic-hook",
       "vars": {
-        "y": -10,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 0.31
-    },
-    {
-      "method": "from",
-      "target": "#frame-hook",
-      "vars": {
-        "y": 55,
-        "rotation": 0,
+        "y": 20,
         "opacity": 0,
-        "duration": 0.7,
-        "ease": "power2.out"
+        "duration": 0.65,
+        "ease": "sine.out"
       },
       "at": 0.25
     },
     {
-      "method": "to",
+      "method": "from",
       "target": "#frame-hook",
       "vars": {
-        "y": 12,
-        "rotation": -1,
-        "duration": 0.25,
+        "y": 35,
+        "opacity": 0,
+        "duration": 0.8,
         "ease": "power2.out"
       },
-      "at": 3.2
+      "at": 0.3
     },
     {
       "method": "from",
-      "target": "#scene-load .eyebrow",
+      "target": "#scene-load .title",
       "vars": {
+        "x": -18,
         "opacity": 0,
-        "duration": 0.35,
+        "duration": 0.45,
+        "ease": "power3.out"
+      },
+      "at": 4.33
+    },
+    {
+      "method": "from",
+      "target": "#graphic-load",
+      "vars": {
+        "y": 20,
+        "opacity": 0,
+        "duration": 0.65,
         "ease": "sine.out"
       },
       "at": 4.4
     },
     {
       "method": "from",
-      "target": "#scene-load .title",
-      "vars": {
-        "x": -36,
-        "opacity": 0,
-        "duration": 0.48,
-        "ease": "power3.out"
-      },
-      "at": 4.470000000000001
-    },
-    {
-      "method": "from",
-      "target": "#scene-load .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 4.5600000000000005
-    },
-    {
-      "method": "from",
       "target": "#frame-load",
       "vars": {
-        "y": 55,
-        "rotation": 0,
+        "y": 35,
         "opacity": 0,
-        "duration": 0.7,
+        "duration": 0.8,
         "ease": "power2.out"
       },
-      "at": 4.5
-    },
-    {
-      "method": "from",
-      "target": "#graphic-load",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.45,
-        "ease": "sine.out"
-      },
-      "at": 4.5
+      "at": 4.45
     },
     {
       "method": "set",
@@ -269,110 +237,36 @@
     },
     {
       "method": "from",
-      "target": "#load-card-0",
+      "target": "#scene-honest .title",
       "vars": {
-        "x": -75,
+        "x": -18,
         "opacity": 0,
-        "duration": 0.55,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 4.5
-    },
-    {
-      "method": "to",
-      "target": "#load-tray",
-      "vars": {
-        "y": 7,
-        "duration": 0.24,
-        "ease": "power2.out"
-      },
-      "at": 4.9
+      "at": 12.98
     },
     {
       "method": "from",
-      "target": "#load-card-1",
+      "target": "#graphic-honest",
       "vars": {
-        "x": 75,
+        "y": 20,
         "opacity": 0,
-        "duration": 0.55,
-        "ease": "power3.out"
-      },
-      "at": 6.2
-    },
-    {
-      "method": "to",
-      "target": "#load-tray",
-      "vars": {
-        "y": 14,
-        "duration": 0.24,
-        "ease": "power2.out"
-      },
-      "at": 6.6000000000000005
-    },
-    {
-      "method": "from",
-      "target": "#load-card-2",
-      "vars": {
-        "x": -75,
-        "opacity": 0,
-        "duration": 0.55,
-        "ease": "power3.out"
-      },
-      "at": 8
-    },
-    {
-      "method": "to",
-      "target": "#load-tray",
-      "vars": {
-        "y": 21,
-        "duration": 0.24,
-        "ease": "power2.out"
-      },
-      "at": 8.4
-    },
-    {
-      "method": "from",
-      "target": "#scene-honest .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
+        "duration": 0.65,
         "ease": "sine.out"
       },
       "at": 13.05
     },
     {
       "method": "from",
-      "target": "#scene-honest .title",
-      "vars": {
-        "x": -36,
-        "opacity": 0,
-        "duration": 0.48,
-        "ease": "power3.out"
-      },
-      "at": 13.120000000000001
-    },
-    {
-      "method": "from",
-      "target": "#scene-honest .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 13.21
-    },
-    {
-      "method": "from",
       "target": "#frame-honest",
       "vars": {
-        "y": 55,
-        "rotation": 0,
+        "y": 35,
         "opacity": 0,
-        "duration": 0.7,
+        "duration": 0.8,
         "ease": "power2.out"
       },
-      "at": 13.15
+      "at": 13.1
     },
     {
       "method": "set",
@@ -420,45 +314,25 @@
     },
     {
       "method": "from",
-      "target": "#scene-release .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
-        "ease": "sine.out"
-      },
-      "at": 18.8
-    },
-    {
-      "method": "from",
       "target": "#scene-release .title",
       "vars": {
-        "x": -36,
+        "x": -18,
         "opacity": 0,
-        "duration": 0.48,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 18.87
-    },
-    {
-      "method": "from",
-      "target": "#scene-release .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 18.96
+      "at": 18.73
     },
     {
       "method": "from",
       "target": "#graphic-release",
       "vars": {
+        "y": 20,
         "opacity": 0,
-        "duration": 0.45,
+        "duration": 0.65,
         "ease": "sine.out"
       },
-      "at": 18.900000000000002
+      "at": 18.8
     },
     {
       "method": "set",
@@ -505,82 +379,37 @@
       "at": 18.560000000000002
     },
     {
-      "method": "to",
-      "target": "#release-back",
-      "vars": {
-        "x": 95,
-        "y": -75,
-        "rotation": 8,
-        "duration": 1.1,
-        "ease": "power2.inOut"
-      },
-      "at": 19.3
-    },
-    {
       "method": "from",
-      "target": "#release-today",
+      "target": "#scene-pause .title",
       "vars": {
-        "x": -55,
-        "y": 40,
-        "rotation": -8,
-        "duration": 0.8,
+        "x": -18,
+        "opacity": 0,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 20.1
+      "at": 23.28
     },
     {
       "method": "from",
-      "target": "#scene-pause .eyebrow",
+      "target": "#graphic-pause",
       "vars": {
+        "y": 20,
         "opacity": 0,
-        "duration": 0.35,
+        "duration": 0.65,
         "ease": "sine.out"
       },
       "at": 23.35
     },
     {
       "method": "from",
-      "target": "#scene-pause .title",
-      "vars": {
-        "x": -36,
-        "opacity": 0,
-        "duration": 0.48,
-        "ease": "power3.out"
-      },
-      "at": 23.42
-    },
-    {
-      "method": "from",
-      "target": "#scene-pause .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 23.51
-    },
-    {
-      "method": "from",
       "target": "#frame-pause",
       "vars": {
-        "y": 55,
-        "rotation": 0,
+        "y": 35,
         "opacity": 0,
-        "duration": 0.7,
+        "duration": 0.8,
         "ease": "power2.out"
       },
-      "at": 23.450000000000003
-    },
-    {
-      "method": "from",
-      "target": "#graphic-pause",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.45,
-        "ease": "sine.out"
-      },
-      "at": 23.450000000000003
+      "at": 23.400000000000002
     },
     {
       "method": "set",
@@ -628,67 +457,25 @@
     },
     {
       "method": "from",
-      "target": "#pause-bars",
-      "vars": {
-        "scaleY": 0.1,
-        "transformOrigin": "50% 100%",
-        "duration": 0.55,
-        "ease": "back.out(1.1)"
-      },
-      "at": 23.5
-    },
-    {
-      "method": "from",
-      "target": "#pause-line",
-      "vars": {
-        "scaleX": 0,
-        "transformOrigin": "0% 50%",
-        "duration": 1.2,
-        "ease": "power3.out"
-      },
-      "at": 23.3
-    },
-    {
-      "method": "from",
-      "target": "#scene-tired .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
-        "ease": "sine.out"
-      },
-      "at": 26.8
-    },
-    {
-      "method": "from",
       "target": "#scene-tired .title",
       "vars": {
-        "x": -36,
+        "x": -18,
         "opacity": 0,
-        "duration": 0.48,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 26.87
-    },
-    {
-      "method": "from",
-      "target": "#scene-tired .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 26.96
+      "at": 26.73
     },
     {
       "method": "from",
       "target": "#graphic-tired",
       "vars": {
+        "y": 20,
         "opacity": 0,
-        "duration": 0.45,
+        "duration": 0.65,
         "ease": "sine.out"
       },
-      "at": 26.900000000000002
+      "at": 26.8
     },
     {
       "method": "set",
@@ -736,101 +523,25 @@
     },
     {
       "method": "from",
-      "target": "#tired-left",
-      "vars": {
-        "x": 120,
-        "rotation": -4,
-        "duration": 0.65,
-        "ease": "power2.out"
-      },
-      "at": 27
-    },
-    {
-      "method": "from",
-      "target": "#tired-right",
-      "vars": {
-        "x": -120,
-        "rotation": 4,
-        "duration": 0.8,
-        "ease": "power3.out"
-      },
-      "at": 27.2
-    },
-    {
-      "method": "from",
-      "target": "#tired-sign",
-      "vars": {
-        "scale": 0,
-        "transformOrigin": "50% 50%",
-        "duration": 0.4,
-        "ease": "back.out(1.1)"
-      },
-      "at": 28.4
-    },
-    {
-      "method": "from",
-      "target": "#tired-rule",
-      "vars": {
-        "scaleX": 0,
-        "transformOrigin": "0% 50%",
-        "duration": 0.6,
-        "ease": "sine.out"
-      },
-      "at": 29
-    },
-    {
-      "method": "from",
-      "target": "#scene-rest .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
-        "ease": "sine.out"
-      },
-      "at": 31.2
-    },
-    {
-      "method": "from",
       "target": "#scene-rest .title",
       "vars": {
-        "x": -36,
+        "x": -18,
         "opacity": 0,
-        "duration": 0.48,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 31.27
-    },
-    {
-      "method": "from",
-      "target": "#scene-rest .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 31.36
-    },
-    {
-      "method": "from",
-      "target": "#frame-rest",
-      "vars": {
-        "y": 55,
-        "rotation": 0,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "power2.out"
-      },
-      "at": 31.3
+      "at": 31.13
     },
     {
       "method": "from",
       "target": "#graphic-rest",
       "vars": {
+        "y": 20,
         "opacity": 0,
-        "duration": 0.45,
+        "duration": 0.65,
         "ease": "sine.out"
       },
-      "at": 31.3
+      "at": 31.2
     },
     {
       "method": "set",
@@ -877,77 +588,26 @@
       "at": 30.96
     },
     {
-      "method": "to",
-      "target": "#rest-dot",
-      "vars": {
-        "x": 240,
-        "duration": 1.1,
-        "ease": "power2.out"
-      },
-      "at": 31.4
-    },
-    {
-      "method": "to",
-      "target": "#rest-dot",
-      "vars": {
-        "x": 380,
-        "y": -120,
-        "duration": 0.9,
-        "ease": "power2.inOut"
-      },
-      "at": 33.2
-    },
-    {
-      "method": "to",
-      "target": "#rest-dot",
-      "vars": {
-        "x": 600,
-        "duration": 0.65,
-        "ease": "sine.out"
-      },
-      "at": 34.1
-    },
-    {
-      "method": "from",
-      "target": "#scene-today .eyebrow",
-      "vars": {
-        "opacity": 0,
-        "duration": 0.35,
-        "ease": "sine.out"
-      },
-      "at": 35.5
-    },
-    {
       "method": "from",
       "target": "#scene-today .title",
       "vars": {
-        "x": -36,
+        "x": -18,
         "opacity": 0,
-        "duration": 0.48,
+        "duration": 0.45,
         "ease": "power3.out"
       },
-      "at": 35.57
-    },
-    {
-      "method": "from",
-      "target": "#scene-today .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 35.66
+      "at": 35.43
     },
     {
       "method": "from",
       "target": "#graphic-today",
       "vars": {
+        "y": 20,
         "opacity": 0,
-        "duration": 0.45,
+        "duration": 0.65,
         "ease": "sine.out"
       },
-      "at": 35.6
+      "at": 35.5
     },
     {
       "method": "set",
@@ -994,82 +654,37 @@
       "at": 35.26
     },
     {
-      "method": "to",
-      "target": "#tomorrow-card",
-      "vars": {
-        "x": 30,
-        "y": -30,
-        "rotation": 5,
-        "duration": 1,
-        "ease": "power2.inOut"
-      },
-      "at": 36
-    },
-    {
-      "method": "to",
-      "target": "#today-dot",
-      "vars": {
-        "x": -210,
-        "y": 290,
-        "duration": 1.4,
-        "ease": "power3.inOut"
-      },
-      "at": 38
-    },
-    {
       "method": "from",
-      "target": "#today-card",
+      "target": "#scene-step .title",
       "vars": {
-        "y": 60,
-        "rotation": -5,
-        "duration": 0.8,
-        "ease": "back.out(1.05)"
-      },
-      "at": 37.3
-    },
-    {
-      "method": "from",
-      "target": "#scene-step .eyebrow",
-      "vars": {
+        "x": -18,
         "opacity": 0,
-        "duration": 0.35,
+        "duration": 0.45,
+        "ease": "power3.out"
+      },
+      "at": 42.23
+    },
+    {
+      "method": "from",
+      "target": "#graphic-step",
+      "vars": {
+        "y": 20,
+        "opacity": 0,
+        "duration": 0.65,
         "ease": "sine.out"
       },
       "at": 42.3
     },
     {
       "method": "from",
-      "target": "#scene-step .title",
-      "vars": {
-        "x": -36,
-        "opacity": 0,
-        "duration": 0.48,
-        "ease": "power3.out"
-      },
-      "at": 42.37
-    },
-    {
-      "method": "from",
-      "target": "#scene-step .emphasis",
-      "vars": {
-        "y": -28,
-        "opacity": 0,
-        "duration": 0.7,
-        "ease": "back.out(1.15)"
-      },
-      "at": 42.459999999999994
-    },
-    {
-      "method": "from",
       "target": "#frame-step",
       "vars": {
-        "y": 55,
-        "rotation": 0,
+        "y": 35,
         "opacity": 0,
-        "duration": 0.7,
+        "duration": 0.8,
         "ease": "power2.out"
       },
-      "at": 42.4
+      "at": 42.349999999999994
     },
     {
       "method": "set",
@@ -1114,6 +729,435 @@
         "ease": "power3.inOut"
       },
       "at": 42.059999999999995
+    },
+    {
+      "method": "from",
+      "target": "#hook-weight",
+      "vars": {
+        "y": -90,
+        "duration": 1.1,
+        "ease": "power3.out"
+      },
+      "at": 0.45
+    },
+    {
+      "method": "to",
+      "target": "#hook-pressure",
+      "vars": {
+        "scaleY": 0.65,
+        "transformOrigin": "50% 50%",
+        "duration": 0.5,
+        "ease": "sine.inOut"
+      },
+      "at": 1.35
+    },
+    {
+      "method": "to",
+      "target": "#hook-cable",
+      "vars": {
+        "y": 10,
+        "duration": 0.38,
+        "ease": "power2.out"
+      },
+      "at": 1.3
+    },
+    {
+      "method": "from",
+      "target": "#scale-weight-a",
+      "vars": {
+        "y": -130,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power3.out"
+      },
+      "at": 4.6
+    },
+    {
+      "method": "from",
+      "target": "#scale-weight-b",
+      "vars": {
+        "y": -130,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power3.out"
+      },
+      "at": 6.5
+    },
+    {
+      "method": "from",
+      "target": "#scale-weight-c",
+      "vars": {
+        "y": -130,
+        "opacity": 0,
+        "duration": 0.7,
+        "ease": "power3.out"
+      },
+      "at": 8.2
+    },
+    {
+      "method": "to",
+      "target": "#scale-beam",
+      "vars": {
+        "rotation": 8,
+        "svgOrigin": "420 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 5.15
+    },
+    {
+      "method": "to",
+      "target": "#scale-beam",
+      "vars": {
+        "rotation": 13,
+        "svgOrigin": "420 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 7.05
+    },
+    {
+      "method": "to",
+      "target": "#scale-beam",
+      "vars": {
+        "rotation": -4,
+        "svgOrigin": "420 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 8.75
+    },
+    {
+      "method": "to",
+      "target": "#scale-beam",
+      "vars": {
+        "rotation": 3,
+        "svgOrigin": "420 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 9.8
+    },
+    {
+      "method": "to",
+      "target": "#rope",
+      "vars": {
+        "attr": {
+          "d": "M120 90 Q420 360 720 90"
+        },
+        "duration": 1.2,
+        "ease": "power2.inOut"
+      },
+      "at": 13.2
+    },
+    {
+      "method": "to",
+      "target": "#rope-weight",
+      "vars": {
+        "y": 85,
+        "duration": 1.2,
+        "ease": "power2.inOut"
+      },
+      "at": 13.2
+    },
+    {
+      "method": "to",
+      "target": "#rope-weight",
+      "vars": {
+        "rotation": -4,
+        "transformOrigin": "50% 0%",
+        "duration": 0.8,
+        "ease": "sine.inOut"
+      },
+      "at": 15.2
+    },
+    {
+      "method": "to",
+      "target": "#rope-weight",
+      "vars": {
+        "rotation": 0,
+        "duration": 0.9,
+        "ease": "sine.inOut"
+      },
+      "at": 16.1
+    },
+    {
+      "method": "to",
+      "target": "#bag-lid",
+      "vars": {
+        "rotation": -115,
+        "svgOrigin": "260 205",
+        "duration": 0.85,
+        "ease": "power2.inOut"
+      },
+      "at": 19.1
+    },
+    {
+      "method": "to",
+      "target": "#bag-weight-a",
+      "vars": {
+        "x": -180,
+        "y": -150,
+        "rotation": -12,
+        "duration": 1.15,
+        "ease": "power3.inOut"
+      },
+      "at": 19.65
+    },
+    {
+      "method": "to",
+      "target": "#bag-weight-b",
+      "vars": {
+        "x": 175,
+        "y": -110,
+        "rotation": 15,
+        "duration": 1.0,
+        "ease": "power2.inOut"
+      },
+      "at": 20.3
+    },
+    {
+      "method": "to",
+      "target": "#bag-body",
+      "vars": {
+        "y": -18,
+        "duration": 0.7,
+        "ease": "sine.out"
+      },
+      "at": 20.95
+    },
+    {
+      "method": "from",
+      "target": "#pause-bench",
+      "vars": {
+        "y": 55,
+        "duration": 0.65,
+        "ease": "power3.out"
+      },
+      "at": 23.5
+    },
+    {
+      "method": "to",
+      "target": "#clock-hand",
+      "vars": {
+        "rotation": 60,
+        "svgOrigin": "625 135",
+        "duration": 1.8,
+        "ease": "power3.out"
+      },
+      "at": 23.6
+    },
+    {
+      "method": "from",
+      "target": "#pause-leaf",
+      "vars": {
+        "rotation": -12,
+        "svgOrigin": "200 385",
+        "duration": 1.4,
+        "ease": "sine.out"
+      },
+      "at": 23.7
+    },
+    {
+      "method": "to",
+      "target": "#plant-stem",
+      "vars": {
+        "rotation": -12,
+        "svgOrigin": "420 410",
+        "duration": 0.7,
+        "ease": "power2.inOut"
+      },
+      "at": 27.0
+    },
+    {
+      "method": "to",
+      "target": "#plant-stem",
+      "vars": {
+        "rotation": 3,
+        "svgOrigin": "420 410",
+        "duration": 1.1,
+        "ease": "sine.inOut"
+      },
+      "at": 27.8
+    },
+    {
+      "method": "to",
+      "target": "#plant-stem",
+      "vars": {
+        "rotation": 0,
+        "svgOrigin": "420 410",
+        "duration": 0.75,
+        "ease": "sine.out"
+      },
+      "at": 29
+    },
+    {
+      "method": "from",
+      "target": "#plant-wind",
+      "vars": {
+        "x": -80,
+        "opacity": 0,
+        "duration": 0.55,
+        "ease": "power2.out"
+      },
+      "at": 26.9
+    },
+    {
+      "method": "to",
+      "target": "#rest-walker",
+      "vars": {
+        "x": 235,
+        "y": -180,
+        "duration": 1.1,
+        "ease": "power2.out"
+      },
+      "at": 31.2
+    },
+    {
+      "method": "to",
+      "target": "#rest-walker",
+      "vars": {
+        "x": 515,
+        "y": -350,
+        "duration": 0.95,
+        "ease": "power2.inOut"
+      },
+      "at": 33.7
+    },
+    {
+      "method": "to",
+      "target": "#calendar-page",
+      "vars": {
+        "rotation": -8,
+        "x": -140,
+        "y": 90,
+        "svgOrigin": "200 145",
+        "duration": 1.3,
+        "ease": "power2.inOut",
+        "scale": 0.55
+      },
+      "at": 36.8
+    },
+    {
+      "method": "from",
+      "target": "#calendar-focus",
+      "vars": {
+        "scale": 0,
+        "svgOrigin": "420 350",
+        "duration": 0.6,
+        "ease": "back.out(1.1)"
+      },
+      "at": 39
+    },
+    {
+      "method": "from",
+      "target": "#step-stones",
+      "vars": {
+        "y": 25,
+        "opacity": 0,
+        "duration": 0.6,
+        "ease": "power2.out"
+      },
+      "at": 42.35
+    },
+    {
+      "method": "from",
+      "target": "#step-mark",
+      "vars": {
+        "y": -130,
+        "opacity": 0,
+        "duration": 0.8,
+        "ease": "power3.out"
+      },
+      "at": 42.7
+    },
+    {
+      "method": "to",
+      "target": "#scale-left",
+      "vars": {
+        "rotation": -8,
+        "svgOrigin": "155 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 5.15
+    },
+    {
+      "method": "to",
+      "target": "#scale-right",
+      "vars": {
+        "rotation": -8,
+        "svgOrigin": "685 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 5.15
+    },
+    {
+      "method": "to",
+      "target": "#scale-left",
+      "vars": {
+        "rotation": -13,
+        "svgOrigin": "155 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 7.05
+    },
+    {
+      "method": "to",
+      "target": "#scale-right",
+      "vars": {
+        "rotation": -13,
+        "svgOrigin": "685 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 7.05
+    },
+    {
+      "method": "to",
+      "target": "#scale-left",
+      "vars": {
+        "rotation": 4,
+        "svgOrigin": "155 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 8.75
+    },
+    {
+      "method": "to",
+      "target": "#scale-right",
+      "vars": {
+        "rotation": 4,
+        "svgOrigin": "685 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 8.75
+    },
+    {
+      "method": "to",
+      "target": "#scale-left",
+      "vars": {
+        "rotation": -3,
+        "svgOrigin": "155 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 9.8
+    },
+    {
+      "method": "to",
+      "target": "#scale-right",
+      "vars": {
+        "rotation": -3,
+        "svgOrigin": "685 180",
+        "duration": 0.65,
+        "ease": "sine.inOut"
+      },
+      "at": 9.8
     }
   ],
   "graphic_labels": [
