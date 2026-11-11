@@ -17,6 +17,7 @@ Larangan: tidak ada render final sebelum storyboard disetujui.
 ## 2. Ekspor
 
 - Satu file saja per proyek: `proyek/<proyek>/out/<proyek>.mp4`, dipakai untuk Reels/TikTok/Shorts.
+- Penegasan Zar (2026-11-11): render visual final sekali; siapkan mix audio sebelum render agar langsung menghasilkan satu MP4 final. Jangan meninggalkan MP4 antara seperti `r2-picture.mp4` di folder hasil. Bila engine membutuhkan berkas antara untuk mux, simpan di `.sementara` pada D: dan gunakan stream copy, bukan render visual kedua.
 - 1080x1920 (9:16), H.264, AAC, tag warna bt709 (K07.2).
 - Loudness −14 LUFS terintegrasi, plafon true-peak master −2 dBTP (K06.2, agar lolos setelah encode AAC).
 
@@ -42,6 +43,8 @@ Larangan: tidak ada render final sebelum storyboard disetujui.
 - Sumber Remotion OTCA versi cloud: `hasil/otca-video-remotion-src.zip` (file proyek). Port menjadi modul repo sebelum dipakai lagi; video OTCA yang sudah jadi tidak di-render ulang.
 
 ## 6. Roadmap premium — diterapkan per video
+
+**Preferensi transisi Zar (2026-11-11):** kurangi jumlah efek transisi; jangan memakai slide/wipe berulang pada setiap pergantian adegan. Utamakan kontinuitas objek atau cut sederhana. Gunakan morph hanya bila hubungan bentuk, objek, dan makna antaradegan cocok; jangan memaksakan morph di semua perpindahan. Berlaku untuk pekerjaan berikutnya, tidak memicu render ulang video selesai.
 
 **Gerak hidup (arahan pengguna 2026-11-06):** baca
 `konteks/KONTEKS_13_motion-hidup_v0.1.md`. Rancang perilaku objek dan hubungan
