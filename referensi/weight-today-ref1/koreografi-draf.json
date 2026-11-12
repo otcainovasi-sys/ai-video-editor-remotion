@@ -1,0 +1,323 @@
+{
+ "_meta": {
+  "id": "weight-today-ref1-draf",
+  "versi": "0.1",
+  "status": "draft",
+  "catatan": "Draf otomatis dari referensi.py — pindahkan ke koreografi/KOREO_NN_<nama>_v0.1.json setelah ditinjau."
+ },
+ "label": "Dari referensi weight-today-ref1",
+ "template": "hook-problem-solution",
+ "variasi_min": 4,
+ "butuh": {
+  "rekaman": true,
+  "remotion": true
+ },
+ "beat_sheet": {
+  "caption": {
+   "aktif": true
+  },
+  "beats": [
+   {
+    "id": "b1",
+    "beat": "hook",
+    "mulai": 0.0,
+    "selesai": 5.0,
+    "elemen": [
+     {
+      "slot": "hook",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 0.2,
+      "selesai": 5.0,
+      "_ref": "shot 1: hook"
+     }
+    ]
+   },
+   {
+    "id": "b2",
+    "beat": "transisi",
+    "mulai": 5.0,
+    "selesai": 5.4,
+    "elemen": [
+     {
+      "slot": "transisi",
+      "mulai": 5.0
+     }
+    ]
+   },
+   {
+    "id": "b3",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 5.4,
+    "selesai": 6.2,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 5.6,
+      "selesai": 6.2,
+      "_ref": "shot 3: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b4",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 6.2,
+    "selesai": 9.6,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 6.4,
+      "selesai": 9.6,
+      "_ref": "shot 4: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b5",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 9.6,
+    "selesai": 14.0,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 9.8,
+      "selesai": 14.0,
+      "_ref": "shot 5: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b6",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 14.0,
+    "selesai": 19.6,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 14.2,
+      "selesai": 19.6,
+      "_ref": "shot 6: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b7",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 19.6,
+    "selesai": 21.8,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 19.8,
+      "selesai": 21.8,
+      "_ref": "shot 7: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b8",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 21.8,
+    "selesai": 31.8,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 22.0,
+      "selesai": 31.8,
+      "_ref": "shot 8: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b9",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 31.8,
+    "selesai": 34.4,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 32.0,
+      "selesai": 34.4,
+      "_ref": "shot 9: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b10",
+    "beat": "info/chip di atas talking head",
+    "mulai": 34.4,
+    "selesai": 38.4,
+    "elemen": [
+     {
+      "slot": "masalah",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 34.6,
+      "selesai": 38.4,
+      "_ref": "shot 10: info/chip di atas talking head"
+     }
+    ]
+   },
+   {
+    "id": "b11",
+    "beat": "info/chip di atas talking head",
+    "mulai": 38.4,
+    "selesai": 39.4,
+    "elemen": [
+     {
+      "slot": "masalah",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 38.6,
+      "selesai": 39.4,
+      "_ref": "shot 11: info/chip di atas talking head"
+     }
+    ]
+   },
+   {
+    "id": "b12",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 39.4,
+    "selesai": 40.8,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 39.6,
+      "selesai": 40.8,
+      "_ref": "shot 12: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b13",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 40.8,
+    "selesai": 44.4,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 41.0,
+      "selesai": 44.4,
+      "_ref": "shot 13: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b14",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 44.4,
+    "selesai": 46.0,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 44.6,
+      "selesai": 46.0,
+      "_ref": "shot 14: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b15",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 46.0,
+    "selesai": 50.6,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 46.2,
+      "selesai": 50.6,
+      "_ref": "shot 15: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b16",
+    "beat": "info/chip di atas talking head",
+    "mulai": 50.6,
+    "selesai": 53.6,
+    "elemen": [
+     {
+      "slot": "masalah",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 50.8,
+      "selesai": 53.6,
+      "_ref": "shot 16: info/chip di atas talking head"
+     }
+    ]
+   },
+   {
+    "id": "b17",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 53.6,
+    "selesai": 59.6,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 53.8,
+      "selesai": 59.6,
+      "_ref": "shot 17: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   },
+   {
+    "id": "b18",
+    "beat": "perangkat cutaway (bukti/langkah)",
+    "mulai": 59.6,
+    "selesai": 63.4,
+    "elemen": [
+     {
+      "slot": "bukti",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 59.8,
+      "selesai": 63.4,
+      "_ref": "shot 18: perangkat cutaway (bukti/langkah)"
+     }
+    ]
+   }
+  ]
+ }
+}

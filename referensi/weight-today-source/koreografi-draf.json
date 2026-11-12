@@ -1,0 +1,46 @@
+{
+ "_meta": {
+  "id": "weight-today-source-draf",
+  "versi": "0.1",
+  "status": "draft",
+  "catatan": "Draf otomatis dari referensi.py — pindahkan ke koreografi/KOREO_NN_<nama>_v0.1.json setelah ditinjau."
+ },
+ "label": "Dari referensi weight-today-source",
+ "template": "hook-problem-solution",
+ "variasi_min": 4,
+ "butuh": {
+  "rekaman": true,
+  "remotion": true
+ },
+ "beat_sheet": {
+  "caption": {
+   "aktif": true
+  },
+  "beats": [
+   {
+    "id": "b1",
+    "beat": "hook",
+    "mulai": 0.0,
+    "selesai": 0.67,
+    "elemen": [
+     {
+      "slot": "hook",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 0.2,
+      "selesai": 0.67,
+      "_ref": "shot 1: hook"
+     }
+    ]
+   },
+   {
+    "id": "b2",
+    "beat": "talking head (caption)",
+    "mulai": 0.67,
+    "selesai": 46.67,
+    "elemen": []
+   }
+  ]
+ }
+}

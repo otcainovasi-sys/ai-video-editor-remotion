@@ -1,0 +1,122 @@
+{
+ "_meta": {
+  "id": "weight-today-ref2-draf",
+  "versi": "0.1",
+  "status": "draft",
+  "catatan": "Draf otomatis dari referensi.py — pindahkan ke koreografi/KOREO_NN_<nama>_v0.1.json setelah ditinjau."
+ },
+ "label": "Dari referensi weight-today-ref2",
+ "template": "hook-problem-solution",
+ "variasi_min": 4,
+ "butuh": {
+  "rekaman": true,
+  "remotion": true
+ },
+ "beat_sheet": {
+  "caption": {
+   "aktif": true
+  },
+  "beats": [
+   {
+    "id": "b1",
+    "beat": "hook",
+    "mulai": 0.0,
+    "selesai": 10.8,
+    "elemen": [
+     {
+      "slot": "hook",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 0.2,
+      "selesai": 10.8,
+      "_ref": "shot 1: hook"
+     }
+    ]
+   },
+   {
+    "id": "b2",
+    "beat": "talking head (caption)",
+    "mulai": 10.8,
+    "selesai": 12.0,
+    "elemen": []
+   },
+   {
+    "id": "b3",
+    "beat": "cutaway gerak (orbit / ui-world / broll)",
+    "mulai": 12.0,
+    "selesai": 14.0,
+    "elemen": [
+     {
+      "slot": "konteks",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 12.2,
+      "selesai": 14.0,
+      "_ref": "shot 3: cutaway gerak (orbit / ui-world / broll)"
+     }
+    ]
+   },
+   {
+    "id": "b4",
+    "beat": "talking head (caption)",
+    "mulai": 14.0,
+    "selesai": 14.4,
+    "elemen": []
+   },
+   {
+    "id": "b5",
+    "beat": "kamera: digital-zoom",
+    "mulai": 14.4,
+    "selesai": 19.2,
+    "elemen": [
+     {
+      "slot": "kamera",
+      "fungsi": "hasil",
+      "mulai": 14.4,
+      "selesai": 19.2
+     }
+    ]
+   },
+   {
+    "id": "b6",
+    "beat": "talking head (caption)",
+    "mulai": 19.2,
+    "selesai": 21.0,
+    "elemen": []
+   },
+   {
+    "id": "b7",
+    "beat": "info/chip di atas talking head",
+    "mulai": 21.0,
+    "selesai": 23.0,
+    "elemen": [
+     {
+      "slot": "masalah",
+      "isi": {
+       "judul": "ISI DARI REFERENSI"
+      },
+      "mulai": 21.2,
+      "selesai": 23.0,
+      "_ref": "shot 7: info/chip di atas talking head"
+     }
+    ]
+   },
+   {
+    "id": "b8",
+    "beat": "kamera: digital-zoom",
+    "mulai": 23.0,
+    "selesai": 34.0,
+    "elemen": [
+     {
+      "slot": "kamera",
+      "fungsi": "hasil",
+      "mulai": 23.0,
+      "selesai": 34.0
+     }
+    ]
+   }
+  ]
+ }
+}
